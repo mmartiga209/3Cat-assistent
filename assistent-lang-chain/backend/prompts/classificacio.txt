@@ -1,0 +1,36 @@
+Analitza el següent text periodístic i identifica si tracta algun dels següents temes. 
+Classifica la notícia en una o més de les següents categories i retorna-ho en format JSON:
+{{
+  "categoria": [
+    "<Violència de gènere | Conflicte bèl·lic | Política | Esport | Catalunya | Persones grans | Crisi climàtica | Cap>"
+  ]
+}}
+
+Guies per a la classificació:
+- **Violència de gènere**: agressions físiques, sexuals o psicològiques en un context de relació de gènere, domèstic o masclista.
+- **Conflicte bèl·lic**: conflictes armats, guerres, enfrontaments militars o bèl·lics.
+- **Política**: temes relacionats amb govern, lleis, partits polítics, eleccions, decisions polítiques.
+- **Esport**: informació sobre competicions esportives, equips, jugadors, esdeveniments esportius.
+- **Catalunya**: si la notícia fa referència explícita a Catalunya, esdeveniments, institucions o persones catalanes.
+- **Persones grans**: notícies centrades en la gent gran, com problemes de salut, serveis socials, polítiques per a aquest col·lectiu.
+- **Crisi climàtica**: notícies sobre canvi climàtic, escalfament global, fenòmens meteorològics extrems, impacte ambiental, polítiques climàtiques.
+- **Cap**: si no hi ha cap referència clara a cap dels temes anteriors.
+
+Exemples:
+- Notícia: 'Els combats a Gaza s’intensifiquen després de l’atac sorpresa de militants.'
+  Classificació: {{ "categoria": ["Conflicte bèl·lic"] }}
+- Notícia: 'Una dona denuncia una agressió sexual per part de la seva parella a Barcelona.'
+  Classificació: {{ "categoria": ["Violència de gènere", "Catalunya"] }}
+- Notícia: 'El Barça guanya la final de la Champions League.'
+  Classificació: {{ "categoria": ["Esport", "Catalunya"] }}
+- Notícia: 'El govern aprova una nova llei fiscal.'
+  Classificació: {{ "categoria": ["Política"] }}
+- Notícia: 'L’Ajuntament de Barcelona amplia els serveis per a persones grans.'
+  Classificació: {{ "categoria": ["Catalunya", "Persones grans"] }}
+- Notícia: 'L’escalfament global provoca un augment dels incendis forestals a la Mediterrània.'
+  Classificació: {{ "categoria": ["Crisi climàtica"] }}
+- Notícia: 'La NASA envia una nova missió a Mart.'
+  Classificació: {{ "categoria": ["Cap"] }}
+
+Text de la notícia:
+{text}

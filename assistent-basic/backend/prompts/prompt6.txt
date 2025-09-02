@@ -56,12 +56,12 @@ Veracitat i rigor: El text proporciona informació clara, precisa i coherent amb
 
 Respon en format JSON amb la següent estructura:
 {{
-  "veracitat_rigor": {{"compliment": "Sí|No|No aplica", "comentari": "Comentari breu"}}
+  "veracitat": {{"compliment": "Sí|No|No aplica", "comentari": "Comentari breu"}}
 }}
 
 Aquí et proporciona un exemple de la sortida esperada:
 {{
-  "veracitat_rigor": {{"compliment": "Sí", "comentari": "Les dades citades estan ben contextualitzades i s'esmenten fonts contrastades."}}
+  "veracitat": {{"compliment": "Sí", "comentari": "Les dades citades estan ben contextualitzades i s'esmenten fonts contrastades."}}
 }}
 
 

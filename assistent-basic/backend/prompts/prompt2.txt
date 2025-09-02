@@ -66,7 +66,7 @@ Pas 4.4: Justificació: Proporciona un comentari breu i clar que justifiqui la v
 
 <criterium_1>
 
-Paritat i equilibri de gènere: El text promou la igualtat entre dones i homes, evita estereotips de gènere i fa ús d’un llenguatge no sexista? Aquest criteri aplica si el context o les conseqüències de la informació tenen o poden tenir una dimensió diferencial per a homes, dones o altres identitats de gènere, ja sigui per: Com afecta les persones (impacte desigual);  Qui en són els protagonistes (representació); Quines veus s’hi recullen o s’hi exclouen (diversitat de fonts); Quins estereotips o omissions poden reproduir-se (tractament i llenguatge).
+Diversitat: Aquest criteri avalua si el contingut textual demostra respecte i sensibilitat envers la diversitat inherent a la societat. Això inclou, però no es limita a, l'observança de la no-discriminació en relació amb l'origen ètnic, el sexe, les creences, la cultura, la llengua, les idees, la situació socioeconòmica, l'orientació sexual, i la condició física o psíquica. Addicionalment, es verificarà l'absència d'estereotips discriminatoris en la representació de qualsevol col·lectiu. Cal considerar que l'aplicabilitat d'aquest criteri depèn de la pertinència temàtica de la notícia. En contextos informatius on la diversitat no constitueix un eix central o implicat en el desenvolupament dels fets (per exemple, en la narració de conflictes bèl·lics sense una dimensió explícita de diversitat), el criteri podria considerar-se no aplicable.
 
 </criterium_1>
 
@@ -76,19 +76,19 @@ Paritat i equilibri de gènere: El text promou la igualtat entre dones i homes, 
 
 Respon en format JSON amb la següent estructura:
 
-{
+{{
 
-"paritat": {"compliment": "Sí|No|No aplica", "comentari": "Comentari breu"}
+"diversitat": {{"compliment": "Sí|No|No aplica", "comentari": "Comentari breu"}}
 
-}
+}}
 
 Aquí et proporciona un exemple de la sortida esperada:
 
-{
+{{
 
-"paritat_equilibri_genere": {"compliment": "Sí", "comentari": "Es fa ús de llenguatge no sexista i hi ha veus femenines destacades."}
+"diversitat": {{"compliment": "No aplica", "comentari": "El tema no té relació amb col·lectius diversos."}}
 
-}
+}}
 
 </response_format>
 
@@ -139,4 +139,26 @@ En la teva valoració, ofereix sempre una resposta matisada: indica fins a quin 
 
 </directive_5>
 
+<directive_6>
+
+Quan comprovis el criteri de diversitat, contextualitza-ho en funció de l’escenari. Per exemple, en el cas d’esports i altres entorns unisexuals:
+
+1. Reconeix modalitats unisexuals
+Si la notícia tracta exclusivament d’una competició o modalitat considerada masculina (p. ex. alineació del FC Barcelona masculí, lliga ACB masculina, partit de bàsquet masculí) o femenina, l’absència de l’altre gènere no s’ha de comptar com a manca de paritat.
+Només apliquis l’anàlisi de paritat quan el contingut permeti, de manera raonable, la inclusió de veus de diferents gèneres (p. ex. experts, entrenadors, directives, analistes).
+2. Diferencia la descripció de fets de la selecció editorial
+Cobertura factual: Si l’article descriu fets on la composició de gènere és externament determinada (resultats, alineacions, calendaris), no penalitzis la peça per no introduir paritat artificial.
+Tria de fonts pròpia: Quan la redacció decideix quins protagonistes, analistes o veus cedeixen opinió (cròniques, reportatges), revisa que la selecció no sigui injustificadament esbiaixada i que inclogui dones sempre que hi hagi expertes rellevants disponibles.
+3. Evita “falsos positius” de paritat
+No generis alertes automàtiques de manca de diversitat de gènere quan aquesta no és rellevant al context informatiu (p. ex. fitxa tècnica d’un jugador, resultats numèrics d’un partit).
+Centra’t a identificar estereotips, usos del llenguatge o omissions significatives només quan el tema tingui una dimensió on la diversitat sigui pertinent.
+4. Excepcions i matisos
+Si la peça destaca qüestions institucionals (pressupostos, polítiques d’igualtat del club, impacte social) o analitza implicacions de gènere més enllà del terreny de joc, aplica el criteri de diversitat amb la mateixa rigorositat que en altres àmbits.
+Indica sempre si la manca de pluralitat és inevitable (normes de la competició, plantilles unisexuals) o editorialment escollida (només entrevistar homes quan hi ha dones expertes disponibles).
+</directive_6>
+
 </execution_directive>
+
+---
+Text de la notícia:
+{text}

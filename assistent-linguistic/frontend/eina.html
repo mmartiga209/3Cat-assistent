@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assistent llibre d'estil 3Cat</title>
+  <style>
+    :root{
+      --fons:#f8f8f8;
+      --card:#ffffff;
+      --borda:#ddd;
+      --borda-suau:#eee;
+      --primari:#007bff;
+      --primari-hover:#0056b3;
+      --text:#222;
+      --muted:#666;
+      --ok:#137333;
+      --ok-bg:#e6f4ea;
+      --ko:#a50e0e;
+      --ko-bg:#fce8e6;
+      --warn:#7a5800;
+      --warn-bg:#fff4ce;
+    }
+    *{box-sizing:border-box}
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 980px;
+      padding: 20px;
+      background-color: var(--fons);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    h2, h3 { text-align: center; margin: 0 0 10px; }
+    p.desc { text-align:center; color: var(--muted); margin: 0 0 24px; }
+    label { font-weight: 600; display:block; margin-top: 10px; }
+    .fila-entrada{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 780px){
+      .fila-entrada{ grid-template-columns: 1fr 1fr; }
+    }
+    textarea, input[type="text"] {
+      width: 100%;
+      padding: 12px 14px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+      outline: none;
+    }
+    textarea { height: 220px; resize: vertical; }
+    .ajuda { margin-top: 6px; font-size: 13px; color: var(--muted); }
+    button {
+      padding: 12px 16px;
+      font-size: 16px;
+      background-color: var(--primari);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      min-width: 210px;
+      align-self: start;
+    }
+    button:hover { background-color: var(--primari-hover); }
+    button:disabled { opacity:.7; cursor:not-allowed; }
+    .carrega{ display:inline-flex; align-items:center; gap:10px; }
+    .spinner{
+      width: 18px; height: 18px; border: 3px solid #fff; border-top-color: transparent;
+      border-radius: 50%; animation: gir 0.8s linear infinite;
+    }
+    @keyframes gir{to{transform:rotate(360deg)}}
+
+    .resposta, .bloc {
+      margin-top: 28px;
+      padding: 20px;
+      background-color: var(--card);
+      border: 1px solid var(--borda);
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    .muted { color: var(--muted); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    th, td {
+      border-bottom: 1px solid var(--borda-suau);
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 15px;
+    }
+    th {
+      background-color: #f5f5f5;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: #333;
+      letter-spacing: .02em;
+    }
+    tr:hover { background-color: #fafafa; }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .badge-si { background: var(--ok-bg); color: var(--ok); }
+    .badge-no { background: var(--ko-bg); color: var(--ko); }
+    .badge-ar { background: var(--warn-bg); color: var(--warn); } /* Amb reserves */
+    .badge-na { background: #eef2f7; color: #3c4043; }
+
+    .key { font-weight: 700; text-transform: capitalize; }
+
+    .errors {
+      margin-top: 10px;
+      color: var(--ko);
+      background: #fdecea;
+      border: 1px solid #f5c2c0;
+      padding: 10px 12px;
+      border-radius: 8px;
+      display:none;
+    }
+    .ok {
+      margin-top: 10px;
+      color: var(--ok);
+      background: #e7f3ec;
+      border: 1px solid #b7dfc8;
+      padding: 10px 12px;
+      border-radius: 8px;
+      display:none;
+    }
+    pre.code {
+      white-space: pre-wrap;
+      word-break: break-word;
+      background: #fafafa;
+      border: 1px solid var(--borda-suau);
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 14px;
+    }
+    .capsa-cap {
+      display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top: 6px;
+    }
+    .btn-copia {
+      font-size: 13px; padding: 8px 10px; border-radius: 8px; border:1px solid var(--borda); background:#fff; color:#111; cursor:pointer;
+    }
+    .btn-copia:hover { background:#f5f5f5; }
+  </style>
+</head>
+<body>
+  <h2>Assistent llibre d'estil 3Cat</h2>
+  <p class="desc">Ara imprimeix el format nou: <em>anàlisi global</em>, <em>avaluació per criteri</em> i <em>versió optimitzada</em>. Prem <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Enter</kbd> per processar.</p>
+
+  <div class="fila-entrada">
+    <div>
+      <label for="noticia">Text o enllaç de la notícia</label>
+      <textarea id="noticia" placeholder="Enganxa aquí el text de la notícia o un enllaç (http...)"></textarea>
+      <div class="ajuda">Si detectem un URL, també l’enviarem al backend perquè el pugui tractar com a font.</div>
+    </div>
+    <div>
+      <label for="api">Servidor API</label>
+      <input id="api" type="text" value="http://localhost:5000" />
+      <div class="ajuda">Endpoint per defecte: <code>/analisigeneral</code>. Canvia l’URL si el backend en fa servir un altre.</div>
+      <button id="btnProcessa" type="button">Processa la notícia</button>
+      <div id="estat" class="ajuda muted" aria-live="polite">Esperant entrada…</div>
+      <div id="err" class="errors"></div>
+      <div id="ok" class="ok"></div>
+    </div>
+  </div>
+
+  <div id="sortida">
+    <!-- Blocs de render es creen aquí -->
+  </div>
+
+<script>
+  // ─────────────────────────────────────────────────────────────────────────────
+  // Configuració bàsica i utilitats d’UI
+  // ─────────────────────────────────────────────────────────────────────────────
+  const ORDER_ANTIC = ["pluralisme","diversitat","minories","paritat","compromis","veracitat","imparcialitat"];
+  const $ = (sel, root=document) => root.querySelector(sel);
+
+  $("#btnProcessa").addEventListener("click", analitzar);
+  $("#noticia").addEventListener("keydown", (e)=>{
+    if ((e.ctrlKey || e.metaKey) && e.key === "Enter"){
+      e.preventDefault();
+      analitzar();
+    }
+  });
+
+  function setEstat(text, tipus="neutral"){
+    const estat = $("#estat");
+    estat.textContent = text || "";
+    estat.classList.remove("muted");
+    if (tipus === "neutral") estat.classList.add("muted");
+  }
+  function mostraError(msg){
+    const box = $("#err");
+    box.textContent = msg;
+    box.style.display = "block";
+    $("#ok").style.display = "none";
+  }
+  function mostraOk(msg){
+    const box = $("#ok");
+    box.textContent = msg;
+    box.style.display = "block";
+    $("#err").style.display = "none";
+  }
+  function netejaAlertes(){
+    $("#err").style.display = "none";
+    $("#ok").style.display = "none";
+  }
+  function activaCarrega(btn, carregant=true){
+    if (!btn) return;
+    btn.disabled = carregant;
+    if (carregant){
+      btn.innerHTML = `<span class="carrega"><span class="spinner" aria-hidden="true"></span>Processant…</span>`;
+    } else {
+      btn.textContent = "Processa la notícia";
+    }
+  }
+  function normalitza(str) {
+    return String(str)
+      .toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+  function escapaHtml(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+  function preparaCos(entrada){
+    const esUrl = /^(https?:\/\/[^\s]+)$/i.test(entrada);
+    const cos = { text: entrada };
+    if (esUrl) cos.url = entrada;
+    return cos;
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // Flux principal
+  // ─────────────────────────────────────────────────────────────────────────────
+  async function analitzar() {
+    netejaAlertes();
+    const textEntrada = $("#noticia").value.trim();
+    const btn = $("#btnProcessa");
+    const API_BASE = ($("#api").value || "http://localhost:5000").replace(/\/+$/,"");
+    const endpoint = "/analisigeneral"; // canvia-ho si cal
+
+    if (!textEntrada) {
+      setEstat("Cal introduir text o un enllaç.");
+      return;
+    }
+
+    setEstat("Analitzant notícia…");
+    activaCarrega(btn, true);
+
+    try {
+      const cos = preparaCos(textEntrada);
+      const data = await cridaBackend(API_BASE, endpoint, cos);
+      console.log("Resposta backend:", data);
+
+      // Decideix render nou o antic segons la forma de la resposta
+      renderResposta(data);
+      setEstat("Anàlisi completada.", "neutral");
+      mostraOk("S’ha processat la notícia correctament.");
+    } catch (error) {
+      console.error(error);
+      $("#sortida").innerHTML = "";
+      mostraError(error.message || "Error desconegut en processar la notícia.");
+      setEstat("S’ha produït un error.");
+    } finally {
+      activaCarrega(btn, false);
+    }
+  }
+
+  async function cridaBackend(base, endpoint, cos) {
+    const url = base + endpoint;
+    const resposta = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(cos)
+    });
+
+    let payload = null;
+    try {
+      payload = await resposta.json();
+    } catch {
+      throw new Error(`La resposta del servidor no és JSON vàlid (HTTP ${resposta.status}).`);
+    }
+
+    if (!resposta.ok) {
+      const detall = payload && (payload.detail || payload.error || payload.message);
+      throw new Error(detall || `Error del servidor (HTTP ${resposta.status}).`);
+    }
+    return payload;
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // Render intel·ligent segons el format
+  // ─────────────────────────────────────────────────────────────────────────────
+  function renderResposta(res){
+    const sortida = $("#sortida");
+    sortida.innerHTML = "";
+
+    if (esRespostaNova(res)) {
+      sortida.appendChild(blocAnalisiGlobal(res.analisi_global));
+      sortida.appendChild(blocAvaluacioPerCriteri(res.avaluacio_per_criteri));
+      sortida.appendChild(blocVersioOptimitzada(res.versio_optimitzada));
+    } else {
+      // compatibilitat amb el format antic (diccionari de criteris -> { compliment, comentari })
+      const bloc = document.createElement("div");
+      bloc.className = "resposta";
+      bloc.innerHTML = `<h3>📊 Resultats (format antic)</h3>${construeixTaulaAntiga(res) || "<p>Sense resultats.</p>"}`;
+      sortida.appendChild(bloc);
+    }
+  }
+
+  function esRespostaNova(obj){
+    if (!obj || typeof obj !== "object") return false;
+    const teAnalisi = typeof obj.analisi_global === "string";
+    const teAvaluacio = Array.isArray(obj.avaluacio_per_criteri);
+    const teVersio = typeof obj.versio_optimitzada === "string";
+    return teAnalisi && teAvaluacio && teVersio;
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // Render NOU (analisi_global, avaluacio_per_criteri, versio_optimitzada)
+  // ─────────────────────────────────────────────────────────────────────────────
+  function blocAnalisiGlobal(text){
+    const d = document.createElement("div");
+    d.className = "bloc";
+    d.innerHTML = `
+      <h3>🧭 Anàlisi global</h3>
+      <p>${escapaHtml(text || "—")}</p>
+    `;
+    return d;
+  }
+
+  function blocAvaluacioPerCriteri(items){
+    const d = document.createElement("div");
+    d.className = "bloc";
+    d.innerHTML = `<h3>🧪 Avaluació per criteri</h3>`;
+
+    if (!Array.isArray(items) || items.length === 0){
+      d.innerHTML += `<p class="muted">Sense elements d’avaluació.</p>`;
+      return d;
+    }
+
+    // Construeix taula
+    const files = items.map((it) => {
+      const criteri = escapaHtml(it?.criteri ?? "—");
+      const complimentRaw = String(it?.compliment ?? "").trim();
+      const complimentNorm = normalitza(complimentRaw);
+      const badgeClass = ({
+        "si":"badge-si", "sí":"badge-si",
+        "no":"badge-no",
+        "amb reserves":"badge-ar",
+      })[complimentNorm] || "badge-na";
+
+      // Exemples: pot ser array de 2 cadenes ["Frase original", "Frase millorada"]
+      const exemples = Array.isArray(it?.exemples) ? it.exemples : [];
+      const exOriginal = escapaHtml(exemples?.[0] || "");
+      const exMillorat = escapaHtml(exemples?.[1] || "");
+
+      const justificacio = escapaHtml(it?.justificacio || "");
+
+      return `
+        <tr>
+          <td class="key">${criteri}</td>
+          <td><span class="badge ${badgeClass}">${escapaHtml(complimentRaw || "—")}</span></td>
+          <td>
+            ${exOriginal || exMillorat ? `
+              <ul style="margin:0; padding-left:18px;">
+                ${exOriginal ? `<li><strong>Original:</strong> ${exOriginal}</li>` : ""}
+                ${exMillorat ? `<li><strong>Millorat:</strong> ${exMillorat}</li>` : ""}
+              </ul>
+            ` : `<span class="muted">Sense exemples</span>`}
+          </td>
+          <td>${justificacio || `<span class="muted">Sense justificació</span>`}</td>
+        </tr>
+      `;
+    }).join("");
+
+    d.innerHTML += `
+      <table role="table" aria-label="Avaluació per criteri">
+        <thead>
+          <tr>
+            <th scope="col">Criteri</th>
+            <th scope="col">Compliment</th>
+            <th scope="col">Exemples</th>
+            <th scope="col">Justificació</th>
+          </tr>
+        </thead>
+        <tbody>${files}</tbody>
+      </table>
+    `;
+
+    return d;
+  }
+
+  function blocVersioOptimitzada(text){
+    const d = document.createElement("div");
+    d.className = "bloc";
+    const contingut = String(text || "").trim() || "—";
+
+    d.innerHTML = `
+      <div class="capsa-cap">
+        <h3 style="margin:0;">📝 Versió optimitzada</h3>
+        <button class="btn-copia" type="button" id="btnCopyOpt">Copia</button>
+      </div>
+      <pre class="code" id="versioOpt">${escapaHtml(contingut)}</pre>
+    `;
+
+    // botó copiar
+    setTimeout(()=>{
+      const btn = d.querySelector("#btnCopyOpt");
+      btn?.addEventListener("click", async ()=>{
+        try{
+          await navigator.clipboard.writeText(contingut);
+          btn.textContent = "Copiat!";
+          setTimeout(()=>btn.textContent = "Copia", 1200);
+        }catch{
+          btn.textContent = "No s’ha pogut copiar";
+          setTimeout(()=>btn.textContent = "Copia", 1500);
+        }
+      });
+    });
+
+    return d;
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // Render ANTIC per compatibilitat
+  // ─────────────────────────────────────────────────────────────────────────────
+  function construeixTaulaAntiga(resultats) {
+    if (!resultats || typeof resultats !== "object" || Object.keys(resultats).length === 0) {
+      return "";
+    }
+    const entries = Object.entries(resultats);
+    entries.sort((a, b) => {
+      const ia = ORDER_ANTIC.indexOf(a[0]);
+      const ib = ORDER_ANTIC.indexOf(b[0]);
+      return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+    });
+
+    let files = "";
+    for (const [criteri, valor] of entries) {
+      const complimentRaw = (valor?.compliment ?? "");
+      const compliment = normalitza(complimentRaw);
+      const comentari = valor?.comentari || "";
+
+      const badgeClasses = {
+        "si": "badge-si",
+        "sí": "badge-si",
+        "no": "badge-no",
+        "no aplica": "badge-na",
+        "n/a": "badge-na",
+        "na": "badge-na"
+      };
+      const classeBadge = badgeClasses[compliment] || "badge-na";
+      const textBadge = complimentRaw || "—";
+
+      files += `
+        <tr>
+          <td class="key">${escapaHtml(criteri)}</td>
+          <td><span class="badge ${classeBadge}">${escapaHtml(textBadge)}</span></td>
+          <td>${escapaHtml(comentari)}</td>
+        </tr>
+      `;
+    }
+
+    return `
+      <table role="table" aria-label="Resultats d'avaluació (antic)">
+        <thead>
+          <tr>
+            <th scope="col">Criteri</th>
+            <th scope="col">Compliment</th>
+            <th scope="col">Comentari</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${files}
+        </tbody>
+      </table>
+    `;
+  }
+</script>
+</body>
+</html>

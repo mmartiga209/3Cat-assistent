@@ -76,19 +76,19 @@ Diversitat: Aquest criteri avalua si el contingut textual demostra respecte i se
 
 Respon en format JSON amb la següent estructura:
 
-{
+{{
 
-"diversitat": {"compliment": "Sí|No|No aplica", "comentari": "Comentari breu"}
+"diversitat": {{"compliment": "Sí|No|No aplica", "comentari": "Comentari breu"}}
 
-}
+}}
 
 Aquí et proporciona un exemple de la sortida esperada:
 
-{
+{{
 
-"diversitat": {"compliment": "No aplica", "comentari": "El tema no té relació amb col·lectius diversos."}
+"diversitat": {{"compliment": "No aplica", "comentari": "El tema no té relació amb col·lectius diversos."}}
 
-}
+}}
 
 </response_format>
 
@@ -159,4 +159,6 @@ Indica sempre si la manca de pluralitat és inevitable (normes de la competició
 
 </execution_directive>
 
-
+---
+Text de la notícia:
+{text}

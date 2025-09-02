@@ -45,10 +45,9 @@ Pas 4.3: Formulació de la Valoració:
 <evaluation_criteria>
 
 <criterium_1>
-Imparcialitat i neutralitat: El text presenta els fets de manera contextualitzada i evita biaixos injustificats en la representació d’esdeveniments o actors. Es valorarà si ofereix una visió equilibrada i si dóna veu, en la mesura del possible, a les parts implicades, sense caure en una simetria forçada quan els fets o els drets vulnerats ho desaconsellen. La imparcialitat no exclou una lectura crítica o interpretativa, sempre que estigui fonamentada en informació verificable i exposada de manera clara.
+Veracitat i rigor: El text proporciona informació clara, precisa i coherent amb els fets coneguts en el moment de la publicació. Es valorarà si evita l’especulació infundada, els rumors o les afirmacions sense base contrastada, tenint en compte la naturalesa de les fonts i el gènere periodístic. Citar declaracions o dades de fonts rellevants (oficials, expertes, testimonis) és acceptable, sempre que s’indiqui clarament el seu origen i es contextualitzi adequadament. El rigor també implica consistència interna i transparència sobre els límits de la informació disponible.
+
 </criterium_1>
-
-
 
 </evaluation_criteria>
 
@@ -57,12 +56,12 @@ Imparcialitat i neutralitat: El text presenta els fets de manera contextualitzad
 
 Respon en format JSON amb la següent estructura:
 {{
-  "imparcialitat_neutralitat": {{"compliment": "Sí|No|No aplica", "comentari": "Comentari breu"}}
+  "veracitat": {{"compliment": "Sí|No|No aplica", "comentari": "Comentari breu"}}
 }}
 
 Aquí et proporciona un exemple de la sortida esperada:
 {{
-  "imparcialitat_neutralitat": {{"compliment": "No aplica", "comentari": "Es tracta d'una peça d'opinió, on la imparcialitat no és un requisit essencial del gènere."}}
+  "veracitat": {{"compliment": "Sí", "comentari": "Les dades citades estan ben contextualitzades i s'esmenten fonts contrastades."}}
 }}
 
 
