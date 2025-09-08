@@ -1,0 +1,814 @@
+{"id":"METEOROLOGIA","desc":"Meteorologia"}
+{"id":"TEMPSAZ","desc":"El temps de la A a la Z"}
+{"id":"CULTPOPULAR","desc":"Cultura popular"}
+{"id":"NADAL","desc":"Nadal"}
+{"id":"SERIES","desc":"Sèries"}
+{"id":"ELISABETII","desc":"Reina Elisabet II"}
+{"id":"MONARQUIA","desc":"Monarquia"}
+{"id":"REGNEUNIT","desc":"Regne Unit"}
+{"id":"CARLESIII","desc":"Carles III"}
+{"id":"CONSELLCUINA","desc":"Consells de cuina"}
+{"id":"CUINANADAL","desc":"Receptes de Nadal"}
+{"id":"BB_SOPES","desc":"Sopes d'hivern"}
+{"id":"PUTAGSTV3","desc":"Tv3"}
+{"id":"MITJANSCOM","desc":"Mitjans de comunicació"}
+{"id":"SALUT","desc":"Salut"}
+{"id":"SABATER","desc":"Carles Sabater"}
+{"id":"MUSICA","desc":"Música"}
+{"id":"MASCLISME","desc":"Masclisme "}
+{"id":"IGUALTATGEN","desc":"Igualtat de gènere"}
+{"id":"SANTJORDI","desc":"Sant Jordi "}
+{"id":"CIENCIA","desc":"Ciència"}
+{"id":"GENERALS23J","desc":"Eleccions Generals 2023 - 23J"}
+{"id":"RELIGIO","desc":"Religió"}
+{"id":"PIQUE","desc":"Gerard Piqué"}
+{"id":"MESSI","desc":"Messi"}
+{"id":"BARTOMEU","desc":"Josep Maria Bartomeu"}
+{"id":"PUTAGSTEMPS","desc":"El temps"}
+{"id":"INUNDACIONS","desc":"Inundacions "}
+{"id":"OBITUARI","desc":"Obituari"}
+{"id":"PERSMEDIA","desc":"Personatges mediàtics"}
+{"id":"JORDIPUJOL","desc":"Jordi Pujol"}
+{"id":"EXTREMADRETA","desc":"Extrema dreta"}
+{"id":"BANCA","desc":"Banca"}
+{"id":"CORONAVIRUS","desc":"Coronavirus "}
+{"id":"MEDIAMBIENT","desc":"Medi ambient"}
+{"id":"SIXENA","desc":"Sixena"}
+{"id":"CRISICLIMA","desc":"Crisi climàtica"}
+{"id":"JOEBIDEN","desc":"Joe Biden"}
+{"id":"ELECCIONSEUA","desc":"Eleccions Estats Units"}
+{"id":"ASSETJESCOLA","desc":"Assetjament escolar"}
+{"id":"TELEVISIO","desc":"Televisió"}
+{"id":"MENORS","desc":"Menors"}
+{"id":"EDUCACIO","desc":"Educació "}
+{"id":"INTERNET","desc":"Internet"}
+{"id":"SOMDONES","desc":"Som dones"}
+{"id":"REFUGIATS","desc":"Refugiats"}
+{"id":"ELECCIONS21","desc":"Eleccions Parlament Catalunya 2021"}
+{"id":"JOCSOLIMPICS","desc":"Jocs Olímpics"}
+{"id":"ANY2008","desc":"2008"}
+{"id":"ANY2002","desc":"2002"}
+{"id":"ANY1999","desc":"1999"}
+{"id":"ANY1984","desc":"1984"}
+{"id":"ANY1998","desc":"1998"}
+{"id":"ART","desc":"Art"}
+{"id":"PUTAGSCULT","desc":"Cultura"}
+{"id":"PATRIMONI","desc":"Patrimoni"}
+{"id":"POLICIAL","desc":"Policial"}
+{"id":"ESTATSUNITS","desc":"Estats Units"}
+{"id":"RACISME","desc":"Racisme"}
+{"id":"URBANISME","desc":"Urbanisme "}
+{"id":"COVID","desc":"Covid-19"}
+{"id":"BCE","desc":"Banc Central Europeu"}
+{"id":"ELSDINERS","desc":"Economia de butxaca"}
+{"id":"JUDICIAL","desc":"Judicial"}
+{"id":"VMASCLISTA","desc":"Violència masclista"}
+{"id":"MIGRACIONS","desc":"Migracions"}
+{"id":"OPENARMS","desc":"Open Arms"}
+{"id":"DRETSHUMANS","desc":"Drets humans"}
+{"id":"ACB","desc":"ACB"}
+{"id":"CUBA","desc":"Cuba"}
+{"id":"PEREARAGONES","desc":"Pere Aragonès"}
+{"id":"FRANCA","desc":"França"}
+{"id":"TRANSIT","desc":"Trànsit"}
+{"id":"BREXIT","desc":"Brexit"}
+{"id":"UNIOEUROPEA","desc":"Unió Europea"}
+{"id":"INCENDIS","desc":"Incendis"}
+{"id":"ALEMANYA","desc":"Alemanya"}
+{"id":"RESIDENCIES","desc":"Residències gent gran "}
+{"id":"VACUNES","desc":"Vacunes"}
+{"id":"VIRAL","desc":"Viral "}
+{"id":"TRAPERO","desc":"Josep Lluís Trapero "}
+{"id":"MIQUELSAMPER","desc":"Miquel Sàmper"}
+{"id":"MADRID","desc":"Comunitat de Madrid"}
+{"id":"AGRESSIOSEX","desc":"Agressió sexual"}
+{"id":"TECNOLOGIA","desc":"Tecnologia"}
+{"id":"TRUMP","desc":"Trump "}
+{"id":"IRAQ","desc":"Iraq"}
+{"id":"IRAN","desc":"Iran"}
+{"id":"BORBON","desc":"Borbons"}
+{"id":"KOEMAN","desc":"Koeman"}
+{"id":"PROCES","desc":"Procés català"}
+{"id":"JUDICIPROCES","desc":"Judici procés"}
+{"id":"ASSANGE","desc":"Julian Assange"}
+{"id":"POBRESA","desc":"Pobresa"}
+{"id":"CDR","desc":"CDR"}
+{"id":"FASEDESESCAL","desc":"Fases de la desescalada"}
+{"id":"MOBILITAT","desc":"Mobilitat"}
+{"id":"CONFINAMENT","desc":"Confinament "}
+{"id":"ELECCIONSFCB","desc":"Eleccions Barça"}
+{"id":"CINEMA","desc":"Cinema"}
+{"id":"XINA","desc":"Xina"}
+{"id":"TEATRE","desc":"Teatre"}
+{"id":"QUIMTORRA","desc":"Quim Torra"}
+{"id":"ESCOCIA","desc":"Escòcia "}
+{"id":"ATUR","desc":"Atur"}
+{"id":"PROCICAT","desc":"Procicat"}
+{"id":"CONTAMINACIO","desc":"Contaminació"}
+{"id":"UNIVERSITAT","desc":"Universitat"}
+{"id":"RAMADERIA","desc":"Ramaderia"}
+{"id":"ILLESBALEARS","desc":"Illes Balears"}
+{"id":"METRO","desc":"Metro"}
+{"id":"RUSSIA","desc":"Rússia"}
+{"id":"DESESCALADA","desc":"Desescalada"}
+{"id":"HABITATGE","desc":"Habitatge"}
+{"id":"FELIPVI","desc":"Felip VI"}
+{"id":"CASAREIAL","desc":"Casa Reial espanyola "}
+{"id":"EXERCITESP","desc":"Exèrcit espanyol"}
+{"id":"LOTERIA","desc":"Loteria"}
+{"id":"VNLA","desc":"Veneçuela"}
+{"id":"VOX","desc":"Vox"}
+{"id":"PAISVALENCIA","desc":"País Valencià"}
+{"id":"LITERATURA","desc":"Literatura"}
+{"id":"NASA","desc":"NASA"}
+{"id":"ESTACIO","desc":"Estació Espacial Internacional"}
+{"id":"XARXASOCIAL","desc":"Xarxes socials "}
+{"id":"FACEBOOK","desc":"Facebook"}
+{"id":"TWITTER","desc":"Twitter"}
+{"id":"PSANCHEZ","desc":"Pedro Sánchez"}
+{"id":"PSOE","desc":"PSOE"}
+{"id":"PIGLESIAS","desc":"Pablo Iglesias"}
+{"id":"PODEM","desc":"Unides Podem"}
+{"id":"NBA","desc":"NBA"}
+{"id":"LLUISPUIG","desc":"Lluís Puig"}
+{"id":"PENYA","desc":"Penya"}
+{"id":"MOSSOS","desc":"Mossos d'Esquadra"}
+{"id":"CORRUPCIO","desc":"Corrupció"}
+{"id":"JXCAT","desc":"Junts"}
+{"id":"ERC","desc":"ERC"}
+{"id":"PSC","desc":"PSC"}
+{"id":"LLIBEXPRESSI","desc":"Llibertat d'expressió "}
+{"id":"NAZISME","desc":"Nazisme"}
+{"id":"BITCOIN","desc":"Bitcoin"}
+{"id":"COMERC","desc":"Comerç"}
+{"id":"GUARDIACIVIL","desc":"Guàrdia Civil"}
+{"id":"NARCOTRAFIC","desc":"Narcotràfic"}
+{"id":"RECERCA","desc":"Recerca científica"}
+{"id":"NEVADES","desc":"Nevades"}
+{"id":"AMBLACULTURA","desc":"Impulsem Cultura"}
+{"id":"DRETSLABORAL","desc":"Drets laborals"}
+{"id":"ANY2015","desc":"2015"}
+{"id":"ANY2009","desc":"2009"}
+{"id":"ANY2006","desc":"2006"}
+{"id":"AFRICA","desc":"Àfrica"}
+{"id":"ZIDANE","desc":"Zidane"}
+{"id":"SEGONAGUERRA","desc":"Segona Guerra Mundial"}
+{"id":"MANRESA","desc":"Bàsquet Manresa"}
+{"id":"EUROLLIGA","desc":"Eurolliga"}
+{"id":"TERRORISME","desc":"Terrorisme"}
+{"id":"JIHADISME","desc":"Jihadisme "}
+{"id":"ENERGIA","desc":"Energia"}
+{"id":"ENERGETICA","desc":"Pobresa energètica"}
+{"id":"SEAT","desc":"Seat"}
+{"id":"PROSTITUCIO","desc":"Prostitució"}
+{"id":"REFERENDUM","desc":"Referèndum 1-O"}
+{"id":"MERKEL","desc":"Angela Merkel"}
+{"id":"ITALIA","desc":"Itàlia"}
+{"id":"FEMINISME","desc":"Feminisme"}
+{"id":"ANIMAL","desc":"Maltractament animal"}
+{"id":"ESGLESIA","desc":"Església"}
+{"id":"LGTBI","desc":"LGTBIQ+"}
+{"id":"PENADEMORT","desc":"Pena de mort"}
+{"id":"AJBARCELONA","desc":"Ajuntament de Barcelona"}
+{"id":"MACRON","desc":"Emmanuel Macron"}
+{"id":"ANY2012","desc":"2012"}
+{"id":"TURISME","desc":"Turisme"}
+{"id":"DROGUES","desc":"Drogues"}
+{"id":"JOHNSON","desc":"Boris Johnson"}
+{"id":"CONSUM","desc":"Consum"}
+{"id":"AEROPORTS","desc":"Aeroports"}
+{"id":"TELETREBALL","desc":"Teletreball"}
+{"id":"ECOLOGIA","desc":"Ecologia"}
+{"id":"ALIMENTACIO","desc":"Alimentació"}
+{"id":"RAMONTREMOSA","desc":"Ramon Tremosa"}
+{"id":"AUTONOMS","desc":"Autònoms"}
+{"id":"ARQUEOLOGIA","desc":"Arqueologia"}
+{"id":"PDECAT","desc":"PDeCAT"}
+{"id":"VILLAREJO","desc":"José Manuel Villarejo"}
+{"id":"HELENAJUBANY","desc":"Helena Jubany"}
+{"id":"ISRAEL","desc":"Israel"}
+{"id":"PALESTINA","desc":"Palestina"}
+{"id":"BOLSONARO","desc":"Jair Bolsonaro"}
+{"id":"AMAZONIA","desc":"Amazònia"}
+{"id":"BRASIL","desc":"Brasil"}
+{"id":"FRAUFISCAL","desc":"Frau fiscal"}
+{"id":"ATEMPTATSBCN","desc":"Atemptats Barcelona Cambrils"}
+{"id":"WHATSAPP","desc":"WhatsApp"}
+{"id":"SALVADORILLA","desc":"Salvador Illa"}
+{"id":"TOCDEQUEDA","desc":"Toc de queda"}
+{"id":"MINGOTE","desc":"Sergi Mingote"}
+{"id":"MARIHUANA","desc":"Marihuana"}
+{"id":"GUB","desc":"Guàrdia Urbana "}
+{"id":"PARLAMENTCAT","desc":"Parlament de Catalunya"}
+{"id":"PEDERASTIA","desc":"Pederàstia "}
+{"id":"EMPRESA","desc":"Empresa"}
+{"id":"PUIGDEMONT","desc":"Carles Puigdemont"}
+{"id":"GOVERNPRESO","desc":"Govern empresonat"}
+{"id":"PREMISGOYA","desc":"Premis Goya"}
+{"id":"CIFUENTES","desc":"Cristina Cifuentes"}
+{"id":"ALTSASU","desc":"Altsasu"}
+{"id":"CUINA","desc":"Cuina"}
+{"id":"ACTUOCLIMA","desc":"Jo també actuo pel clima"}
+{"id":"GUARDIOLA","desc":"Guardiola"}
+{"id":"PUTIN","desc":"Vladímir Putin"}
+{"id":"ASSETJSEXUAL","desc":"Assetjament sexual "}
+{"id":"KAMALAHARRIS","desc":"Kamala Harris"}
+{"id":"GASTRONOMIA","desc":"Gastronomia"}
+{"id":"DIGITALS","desc":"Digital "}
+{"id":"COROMINES","desc":"Joan Coromines"}
+{"id":"LAVOLTA","desc":"La Volta"}
+{"id":"MALVERSACIO","desc":"Malversació"}
+{"id":"CAT54204","desc":"Àustria"}
+{"id":"RODALIES","desc":"Rodalies"}
+{"id":"RENFE","desc":"Renfe"}
+{"id":"ANDORRA","desc":"Andorra"}
+{"id":"GLORIA","desc":"Temporal Gloria"}
+{"id":"INFRAESTRUCT","desc":"Infraestructures"}
+{"id":"AGRICULTURA","desc":"Agricultura"}
+{"id":"URDANGARIN","desc":"Urdangarin"}
+{"id":"NOOS","desc":"Nóos"}
+{"id":"CATALA","desc":"Català "}
+{"id":"OMS","desc":"OMS"}
+{"id":"RMADRID","desc":"Reial Madrid"}
+{"id":"HOMOFOBIA","desc":"Homofòbia"}
+{"id":"FOTOGRAFIA","desc":"Fotografia "}
+{"id":"TSJC","desc":"TSJC"}
+{"id":"MODA","desc":"Moda"}
+{"id":"SEGURETAT","desc":"Seguretat"}
+{"id":"POLINACIONAL","desc":"Policia Nacional"}
+{"id":"VENTADES","desc":"Ventades"}
+{"id":"BOMBERS","desc":"Bombers"}
+{"id":"AVORTAMENT","desc":"Avortament "}
+{"id":"ANY1995","desc":"1995"}
+{"id":"ANY2019","desc":"2019"}
+{"id":"ANY2000","desc":"2000"}
+{"id":"ANY2017","desc":"2017"}
+{"id":"ANY2010","desc":"2010"}
+{"id":"AMAZON","desc":"Amazon"}
+{"id":"GALICIA","desc":"Galícia"}
+{"id":"ELECCIONS","desc":"Eleccions"}
+{"id":"EGIPTE","desc":"Egipte"}
+{"id":"XENOFOBIA","desc":"Xenofòbia"}
+{"id":"PP","desc":"PP"}
+{"id":"SAGRFAMILIA","desc":"Sagrada Família"}
+{"id":"ADACOLAU","desc":"Ada Colau"}
+{"id":"ENCOMU","desc":"Comuns"}
+{"id":"ESPIONATGE","desc":"Espionatge"}
+{"id":"ALZHEIMER","desc":"Alzheimer"}
+{"id":"AN","desc":"Audiència Nacional"}
+{"id":"AVE","desc":"AVE"}
+{"id":"RAFANADAL","desc":"Rafa Nadal"}
+{"id":"MIQUELICETA","desc":"Miquel Iceta"}
+{"id":"TC","desc":"Tribunal Constitucional "}
+{"id":"ALBAVERGES","desc":"Alba Vergés"}
+{"id":"ANDALUSIA","desc":"Andalusia"}
+{"id":"CS","desc":"Cs"}
+{"id":"CUP","desc":"CUP"}
+{"id":"TRANSPUBLIC","desc":"Transport públic"}
+{"id":"CANCER","desc":"Càncer"}
+{"id":"ANY2014","desc":"2014"}
+{"id":"DELICTESECO","desc":"Delictes econòmics"}
+{"id":"ANY2020","desc":"2020"}
+{"id":"BORSA","desc":"Borsa "}
+{"id":"SUPREM","desc":"Tribunal Suprem "}
+{"id":"ARTURMAS","desc":"Artur Mas"}
+{"id":"PREMISGAUDI","desc":"Premis Gaudí"}
+{"id":"MEXIC","desc":"Mèxic"}
+{"id":"HASEL","desc":"Pablo Hasél"}
+{"id":"FAMILIA","desc":"Família "}
+{"id":"LAURABORRAS","desc":"Laura Borràs"}
+{"id":"BIOMEDICINA","desc":"Biomedicina"}
+{"id":"ANY1988","desc":"1988"}
+{"id":"EUTANASIA","desc":"Eutanàsia"}
+{"id":"MUSEUS","desc":"Museus"}
+{"id":"VONDERLEYEN","desc":"Ursula von der Leyen"}
+{"id":"COMISSIOEU","desc":"Comissió Europea"}
+{"id":"FORCADELL","desc":"Carme Forcadell"}
+{"id":"JOCAPOSTES","desc":"Joc i apostes"}
+{"id":"MARADONA","desc":"Maradona"}
+{"id":"BIRMANIA","desc":"Birmània"}
+{"id":"ROHINGYES","desc":"Rohingyes"}
+{"id":"ESTATALARMA","desc":"Estat d'alarma"}
+{"id":"SOSTENIBILIT","desc":"Sostenibilitat"}
+{"id":"OMNIUM","desc":"Òmnium Cultural"}
+{"id":"JORDICUIXART","desc":"Jordi Cuixart"}
+{"id":"JORDISANCHEZ","desc":"Jordi Sànchez"}
+{"id":"JUNQUERAS","desc":"Oriol Junqueras"}
+{"id":"DOLORSBASSA","desc":"Dolors Bassa"}
+{"id":"RAULROMEVA","desc":"Raül Romeva"}
+{"id":"JORDITURULL","desc":"Jordi Turull"}
+{"id":"JOSEPRULL","desc":"Josep Rull"}
+{"id":"JOAQUIMFORN","desc":"Joaquim Forn"}
+{"id":"HIPOTEQUES","desc":"Hipoteques"}
+{"id":"GENERALITAT","desc":"Generalitat de Catalunya"}
+{"id":"PENSIONS","desc":"Pensions"}
+{"id":"ISLAM","desc":"Islam"}
+{"id":"ISLAMOFOBIA","desc":"Islamofòbia"}
+{"id":"IGNGARRIGA","desc":"Ignacio Garriga"}
+{"id":"GRIEZMANN","desc":"Griezmann"}
+{"id":"MRAJOY","desc":"Mariano Rajoy"}
+{"id":"CARLESRIERA","desc":"Carles Riera"}
+{"id":"DSABATER","desc":"Dolors Sabater"}
+{"id":"PUTAGSCR","desc":"Catalunya Ràdio"}
+{"id":"GRETACLIMA","desc":"Greta Thunberg"}
+{"id":"AFERNANDEZ","desc":"Alejandro Fernández"}
+{"id":"ELECTORAL","desc":"Eleccions Parlament Catalunya 2024"}
+{"id":"OKLLIGA","desc":"OKLliga"}
+{"id":"ALBIACH","desc":"Jéssica Albiach"}
+{"id":"MARQUEZ","desc":"Marc Màrquez"}
+{"id":"CRIPTOMONEDA","desc":"Criptomonedes"}
+{"id":"NEYMAR","desc":"Neymar"}
+{"id":"MARROC","desc":"Marroc"}
+{"id":"PESCA","desc":"Pesca"}
+{"id":"TSUNAMIDEM","desc":"Tsunami Democràtic"}
+{"id":"PAISBASC","desc":"País Basc"}
+{"id":"INSTAGRAM","desc":"Instagram"}
+{"id":"ANY1996","desc":"1996"}
+{"id":"BRETXASALARI","desc":"Bretxa salarial"}
+{"id":"PRECARIETAT","desc":"Precarietat laboral"}
+{"id":"PREMSA","desc":"Llibertat de premsa"}
+{"id":"UMTITI","desc":"Umtiti"}
+{"id":"ANGELSCHACON","desc":"Àngels Chacón"}
+{"id":"ARRIMADAS","desc":"Inés Arrimadas"}
+{"id":"CARRIZOSA","desc":"Carlos Carrizosa"}
+{"id":"AGULLO","desc":"Guillem Agulló"}
+{"id":"FRANCO","desc":"Francisco Franco"}
+{"id":"MEMHISTORICA","desc":"Memòria històrica "}
+{"id":"FRANQUISME","desc":"Franquisme"}
+{"id":"MWC","desc":"Mobile World Congress"}
+{"id":"INDEP","desc":"Independència"}
+{"id":"LNFS","desc":"LNFS"}
+{"id":"ETA","desc":"ETA"}
+{"id":"NOVAZELANDA","desc":"Nova Zelanda"}
+{"id":"SIRIA","desc":"Síria"}
+{"id":"DELICTEODI","desc":"Delicte d'odi"}
+{"id":"FEIXISME","desc":"Feixisme"}
+{"id":"CAYETANA","desc":"Cayetana Álvarez de Toledo"}
+{"id":"PCASADO","desc":"Pablo Casado"}
+{"id":"JOANMARGARIT","desc":"Joan Margarit"}
+{"id":"SIMONEBILES","desc":"Simone Biles"}
+{"id":"ARCADIOLIVER","desc":"Arcadi Oliveres"}
+{"id":"GOOGLE","desc":"Google"}
+{"id":"PARLAMENTUE","desc":"Parlament Europeu"}
+{"id":"LLARENA","desc":"Pablo Llarena"}
+{"id":"TONICOMIN","desc":"Toni Comín"}
+{"id":"CLARAPONSATI","desc":"Clara Ponsatí"}
+{"id":"GAZA","desc":"Gaza"}
+{"id":"PU_MARATO","desc":"La Marató"}
+{"id":"MIQUELBUCH","desc":"Miquel Buch"}
+{"id":"PAUGASOL","desc":"Pau Gasol"}
+{"id":"REFLEXIONS","desc":"Reflexions des del confinament"}
+{"id":"SIDA","desc":"Sida"}
+{"id":"ANY1986","desc":"1986"}
+{"id":"ANY1990","desc":"1990"}
+{"id":"ANY1993","desc":"1993"}
+{"id":"ANY2021","desc":"2021"}
+{"id":"ANY2013","desc":"2013"}
+{"id":"ANY2004","desc":"2004"}
+{"id":"PROXIMORIENT","desc":"Pròxim Orient "}
+{"id":"ESTATISLAMIC","desc":"Estat Islàmic"}
+{"id":"IMMOBILIARI","desc":"Mercat immobiliari"}
+{"id":"ANY1991","desc":"1991"}
+{"id":"ANY1983","desc":"1983"}
+{"id":"ANY2005","desc":"2005"}
+{"id":"ANY1994","desc":"1994"}
+{"id":"ANY2011","desc":"2011"}
+{"id":"ANY1987","desc":"1987"}
+{"id":"ONU","desc":"ONU"}
+{"id":"ANY1997","desc":"1997"}
+{"id":"ARGENTINA","desc":"Argentina"}
+{"id":"ALFREDBOSCH","desc":"Alfred Bosch"}
+{"id":"ANSUFATI","desc":"AnsuFati"}
+{"id":"VAGADIADONA","desc":"8M"}
+{"id":"PUNICA","desc":"Púnica"}
+{"id":"CGPJ","desc":"CGPJ"}
+{"id":"ASAUDITA","desc":"Aràbia Saudita"}
+{"id":"KHASHOGGI","desc":"Jamal Khashoggi"}
+{"id":"TURQUIA","desc":"Turquia"}
+{"id":"TABAC","desc":"Tabac"}
+{"id":"GUERRACIVIL","desc":"Guerra Civil espanyola "}
+{"id":"VIDEOJOCS","desc":"Videojocs"}
+{"id":"COREANORD","desc":"Corea del Nord"}
+{"id":"ANC","desc":"ANC"}
+{"id":"PRIMAVERASOU","desc":"Primavera Sound"}
+{"id":"BGATE","desc":"Barçagate"}
+{"id":"AFGANISTAN","desc":"Afganistan"}
+{"id":"PAPAFRANCESC","desc":"Papa Francesc"}
+{"id":"XILE","desc":"Xile"}
+{"id":"FINLANDIA","desc":"Finlàndia"}
+{"id":"KURDISTAN","desc":"Kurdistan"}
+{"id":"KURDS","desc":"Kurds"}
+{"id":"FLOYD","desc":"George Floyd"}
+{"id":"MSERRET","desc":"Meritxell Serret"}
+{"id":"MOCIOCENSURA","desc":"Moció de censura"}
+{"id":"ANY2007","desc":"2007"}
+{"id":"ANY2018","desc":"2018"}
+{"id":"AGUERO","desc":"Agüero"}
+{"id":"BOLIVIA","desc":"Bolívia "}
+{"id":"EVOMORALES","desc":"Evo Morales"}
+{"id":"SEDICIO","desc":"Sedició"}
+{"id":"BIELORRUSSIA","desc":"Bielorússia "}
+{"id":"EUROVISIO","desc":"Festival d'Eurovisió"}
+{"id":"BARCENAS","desc":"Luis Bárcenas"}
+{"id":"ROSALIA","desc":"Rosalía"}
+{"id":"CATALUNYA","desc":"Catalunya"}
+{"id":"PREMISOSCARS","desc":"Premis Oscar"}
+{"id":"AMIANT","desc":"Amiant"}
+{"id":"ABALOS","desc":"José Luis Ábalos"}
+{"id":"RTORRENT","desc":"Roger Torrent"}
+{"id":"IBEX35","desc":"IBEX 35"}
+{"id":"ERREJON","desc":"Íñigo Errejón"}
+{"id":"COMIC","desc":"Còmic"}
+{"id":"PUTAGESPORTS","desc":"Esports"}
+{"id":"DONESCIENCIA","desc":"Dones i ciència"}
+{"id":"SUAREZ","desc":"Luis Suárez"}
+{"id":"ABIDAL","desc":"Abidal"}
+{"id":"CONSELLDEURO","desc":"Consell d'Europa"}
+{"id":"TRAMVIA","desc":"Tramvia"}
+{"id":"SINDROMEDOWN","desc":"Síndrome de Down "}
+{"id":"CASTELLERS","desc":"Castellers"}
+{"id":"AZNAR","desc":"José María Aznar"}
+{"id":"SUEZ","desc":"Suez"}
+{"id":"INVESTIDURA","desc":"Investidura"}
+{"id":"ANOREXIA","desc":"Anorèxia"}
+{"id":"INDULTS","desc":"Indults"}
+{"id":"ZBEBARCELONA","desc":"ZBE Barcelona"}
+{"id":"JAPO","desc":"Japó"}
+{"id":"MARLASKA","desc":"Fernando Grande-Marlaska"}
+{"id":"NAVALNI","desc":"Aleksei Navalni"}
+{"id":"VAGAFAM","desc":"Vaga de fam"}
+{"id":"PERPINYA","desc":"Perpinyà"}
+{"id":"INVCATALANS","desc":"Investigadors catalans"}
+{"id":"PROTECCIODAD","desc":"Protecció de dades"}
+{"id":"LSANZ","desc":"Laia Sanz"}
+{"id":"DEMBELE","desc":"Dembélé"}
+{"id":"OTEGI","desc":"Arnaldo Otegi"}
+{"id":"PREGUCORONA","desc":"Preguntes i respostes coronavirus"}
+{"id":"ELCLASSIC","desc":"El Clàssic"}
+{"id":"MARCGASOL","desc":"Marc Gasol"}
+{"id":"ANY2016","desc":"2016"}
+{"id":"CAT52711","desc":"La Manada"}
+{"id":"BULLYING","desc":"Bullying"}
+{"id":"ARTICLE155","desc":"Article 155"}
+{"id":"ERDOGAN","desc":"Recep Tayip Erdogan"}
+{"id":"AYUSO","desc":"Isabel Díaz Ayuso"}
+{"id":"TRANSGENERE","desc":"Dia de la visibilitat transgènere"}
+{"id":"BAFTA","desc":"Premis Bafta"}
+{"id":"FUKUSHIMA","desc":"Fukushima"}
+{"id":"EGM","desc":"EGM"}
+{"id":"FMI","desc":"Fons Monetari Internacional "}
+{"id":"TXERNOBIL","desc":"Txernòbil"}
+{"id":"BIODIVERSITA","desc":"Biodiversitat"}
+{"id":"JORNET","desc":"Kilian Jornet"}
+{"id":"ASOBAL","desc":"ASOBAL"}
+{"id":"BORRELL","desc":"Josep Borrell"}
+{"id":"SUPERLLIGA","desc":"Superlliga"}
+{"id":"ANY1989","desc":"1989"}
+{"id":"TOPCATRADIO","desc":"Top CatRàdio"}
+{"id":"UWCLGOTERBOG","desc":"Final Champions Göteborg"}
+{"id":"POLISARIO","desc":"Front Polisario"}
+{"id":"UCRAINA","desc":"Ucraïna"}
+{"id":"ANTIFEIXISME","desc":"Antifeixisme "}
+{"id":"ARQUITECTURA","desc":"Arquitectura"}
+{"id":"PARKINSON","desc":"Parkinson"}
+{"id":"PEATGES","desc":"Peatges"}
+{"id":"LLUNA","desc":"La Lluna"}
+{"id":"SALUTMENTAL","desc":"Salut Mental"}
+{"id":"APPLE","desc":"Apple"}
+{"id":"ELECALEMANYA","desc":"Eleccions Alemanya "}
+{"id":"BAERBOCK","desc":"Annalena Baerbock"}
+{"id":"NOTISFALSES","desc":"Notícies falses"}
+{"id":"ELSAARTADI","desc":"Elsa Artadi"}
+{"id":"INDIA","desc":"L'Índia "}
+{"id":"COLOMBIA","desc":"Colòmbia"}
+{"id":"TERSTEGEN","desc":"Ter Stegen"}
+{"id":"INIESTA","desc":"Iniesta"}
+{"id":"EURO2020","desc":"Eurocopa2020"}
+{"id":"TAXIS","desc":"Taxis"}
+{"id":"CEUTA","desc":"Ceuta"}
+{"id":"ANY1992","desc":"1992"}
+{"id":"SAHARA","desc":"Sàhara Occidental"}
+{"id":"PUTAGS324","desc":"Notícies"}
+{"id":"CAMERICA","desc":"Copa Amèrica"}
+{"id":"PESI","desc":"Svetislav Pesic "}
+{"id":"ANY2001","desc":"2001"}
+{"id":"PREMICULTURA","desc":"Premis Nacionals de Cultura"}
+{"id":"CANADA","desc":"Canadà"}
+{"id":"JORDPUIGNERO","desc":"Jordi Puigneró"}
+{"id":"AIGUESBCN","desc":"Aigües de Barcelona"}
+{"id":"SRILANKA","desc":"Sri Lanka"}
+{"id":"PIRATERIA","desc":"Pirateria"}
+{"id":"CERTIFICAT","desc":"Certificat Covid"}
+{"id":"SANTJOAN","desc":"Sant Joan"}
+{"id":"BELARRA","desc":"Ione Belarra"}
+{"id":"SUSANADIAZ","desc":"Susana Díaz "}
+{"id":"SEQUERA","desc":"Sequera"}
+{"id":"HONGKONG","desc":"Hong Kong"}
+{"id":"ATEMPTATS11S","desc":"11S Atemptats"}
+{"id":"BARCAB","desc":"Barça B"}
+{"id":"TOURDEFRANCA","desc":"Tour de França"}
+{"id":"RALIS","desc":"Mundial de ral·lis"}
+{"id":"GOVERNESP","desc":"Govern espanyol"}
+{"id":"CANNABIS","desc":"Cànnabis"}
+{"id":"MONCLOA","desc":"Moncloa"}
+{"id":"MONTSERRAT","desc":"Abadia de Montserrat"}
+{"id":"PROTESTESEUA","desc":"Protestes EUA"}
+{"id":"VATICA","desc":"Vaticà"}
+{"id":"REBELIO","desc":"Rebel·lió"}
+{"id":"CONSTITUCIOE","desc":"Constitució espanyola"}
+{"id":"EMMY","desc":"Premis Emmy"}
+{"id":"CANNES","desc":"Festival de Canes"}
+{"id":"HORTASTJOAN","desc":"Incendi Horta de Sant Joan"}
+{"id":"PGE","desc":"Pressupostos Generals de l'Estat"}
+{"id":"RIGOBANDINI","desc":"Rigoberta Bandini"}
+{"id":"AUTONOMIC","desc":"Finançament autonòmic"}
+{"id":"TALIBANS","desc":"Talibans"}
+{"id":"HOLOCAUST","desc":"Holocaust"}
+{"id":"ALGERIA","desc":"Algèria"}
+{"id":"ONADACALOR","desc":"Onada de calor"}
+{"id":"IPC","desc":"IPC "}
+{"id":"COUTINHO","desc":"Coutinho"}
+{"id":"OPJUDES","desc":"Operació Judes"}
+{"id":"AUTOPISTES","desc":"Autopistes"}
+{"id":"MARMENOR","desc":"Mar Menor"}
+{"id":"GURTEL","desc":"Gürtel"}
+{"id":"CASTELLVI","desc":"Josefina Castellví "}
+{"id":"MEDALLAOR","desc":"Medalla d'Or de la Generalitat"}
+{"id":"CONSELLREP","desc":"Consell per la República"}
+{"id":"LAMERCE","desc":"La Mercè"}
+{"id":"CAT52966","desc":"Marta Rovira"}
+{"id":"AEROPORTPRAT","desc":"Aeroport del Prat"}
+{"id":"CASPALU","desc":"Cas Palau"}
+{"id":"SELECTIVITAT","desc":"Selectivitat"}
+{"id":"ALQAEDA","desc":"Al Qaeda"}
+{"id":"MADURO","desc":"Nicolás Maduro "}
+{"id":"DIADA","desc":"11S"}
+{"id":"JUANMAMORENO","desc":"Juan Manuel Moreno"}
+{"id":"ARTIFICIAL","desc":"Intel·ligència artificial"}
+{"id":"NORUEGA","desc":"Noruega"}
+{"id":"ALVES","desc":"DaniAlves"}
+{"id":"AUSTRALIA","desc":"Austràlia"}
+{"id":"NOTREDAME","desc":"Notre-Dame"}
+{"id":"CUMBREVIEJA","desc":"Volcà Cumbre Vieja"}
+{"id":"CANARIES","desc":"Les Canàries "}
+{"id":"LAPALMA","desc":"La Palma"}
+{"id":"PAKISTAN","desc":"Pakistan"}
+{"id":"ENRICMILLO","desc":"Enric Millo"}
+{"id":"HUAWEI","desc":"Huawei"}
+{"id":"DEBAT","desc":"Debat política general"}
+{"id":"COLLBONI","desc":"Jaume Collboni "}
+{"id":"PILOTADOR","desc":"Pilota d'Or"}
+{"id":"JUDTRAPERO","desc":"Judici Trapero"}
+{"id":"XAVI","desc":"Xavi Hernández"}
+{"id":"NOBEL","desc":"Premi Nobel"}
+{"id":"HCATALANA","desc":"Hisenda catalana"}
+{"id":"FESTIVSITGES","desc":"Festival de Sitges"}
+{"id":"HISPANITAT","desc":"12-O"}
+{"id":"TITANDESERT","desc":"Titan Desert"}
+{"id":"PAUDONES","desc":"Pau Donés"}
+{"id":"XAVIERALBIOL","desc":"Xavier García Albiol "}
+{"id":"CASTOR","desc":"Castor"}
+{"id":"CCOO","desc":"CCOO"}
+{"id":"UGT","desc":"UGT"}
+{"id":"BILDU","desc":"Bildu"}
+{"id":"SANDROROSELL","desc":"Sandro Rosell"}
+{"id":"BMGRANOLLERS","desc":"BM Granollers"}
+{"id":"CALENDARI","desc":"Calendari laboral"}
+{"id":"DERBI","desc":"El Derbi"}
+{"id":"PRESSUPOST","desc":"Pressupostos de la Generalitat "}
+{"id":"CIBERDELICTE","desc":"Ciberdelicte"}
+{"id":"VALTONYC","desc":"Valtònyc"}
+{"id":"FESTIVASONAR","desc":"Sónar"}
+{"id":"NISSAN","desc":"Nissan"}
+{"id":"MUNDIAL2018","desc":"Mundial Qatar 2022"}
+{"id":"BADOSA","desc":"Paula Badosa"}
+{"id":"ESTILDEVIDA","desc":"Estil de vida"}
+{"id":"CISJORDANIA","desc":"Cisjordània"}
+{"id":"IGM","desc":"Primera Guerra Mundial"}
+{"id":"ABASCAL","desc":"Santiago Abascal "}
+{"id":"ESPAIFCB","desc":"Espai Barça"}
+{"id":"PUERTORICO","desc":"Puerto Rico"}
+{"id":"E360","desc":"Esports360"}
+{"id":"REUS","desc":"Reus"}
+{"id":"AGTRIBUTARIA","desc":"Agència Tributària "}
+{"id":"ERTO","desc":"ERTO"}
+{"id":"TRANSFOBIA","desc":"Transfòbia"}
+{"id":"CEOE","desc":"CEOE"}
+{"id":"OMICRON","desc":"Òmicron"}
+{"id":"SANDREUBARCA","desc":"Sant Andreu de la Barca"}
+{"id":"THERESAMAY","desc":"Theresa May"}
+{"id":"PORTUGAL","desc":"Portugal"}
+{"id":"INFANCIA","desc":"Infància "}
+{"id":"ALEXIAPUTELL","desc":"Alèxia Putellas"}
+{"id":"IMMERSIOLING","desc":"Immersió lingüística"}
+{"id":"KAZAKHSTAN","desc":"Kazakhstan "}
+{"id":"SASSOLI","desc":"David Sassoli"}
+{"id":"INTERPOL","desc":"Interpol"}
+{"id":"CARLASIMON","desc":"Carla Simón"}
+{"id":"ASIA","desc":"Àsia"}
+{"id":"SETEMBRE","desc":"20S"}
+{"id":"RBOFILL","desc":"Ricardo Bofill"}
+{"id":"AI","desc":"Amnistia Internacional"}
+{"id":"MALI","desc":"Mali"}
+{"id":"QUERALTCASTE","desc":"Queralt Castellet"}
+{"id":"ALBERTRIVERA","desc":"Albert Rivera"}
+{"id":"PAURIBA","desc":"Pau Riba"}
+{"id":"JJOOCONSULTA","desc":"Jocs Olímpics Hivern "}
+{"id":"ZELENSKI","desc":"Volodímir Zelenski"}
+{"id":"DOMINICANA","desc":"República Dominicana"}
+{"id":"HAITI","desc":"Haití"}
+{"id":"OTAN","desc":"OTAN"}
+{"id":"DEPOBLAMENT","desc":"Despoblament "}
+{"id":"FEIJOO","desc":"Alberto Núñez Feijóo"}
+{"id":"MIDCAT","desc":"Midcat"}
+{"id":"RUFIAN","desc":"Gabriel Rufián"}
+{"id":"TRANSPORT","desc":"Transport de mercaderies"}
+{"id":"CONSELLEUROP","desc":"Consell Europeu"}
+{"id":"CUCAGAMARRA","desc":"Cuca Gamarra"}
+{"id":"ELECFRAN","desc":"Eleccions França 2022"}
+{"id":"IRPF","desc":"IRPF"}
+{"id":"FP","desc":"Formació Professional "}
+{"id":"PUAGR_ACTFAM","desc":"Activitats en família"}
+{"id":"CATALANGATE","desc":"Catalangate"}
+{"id":"SUECIA","desc":"Suècia "}
+{"id":"BOBS","desc":"Barcelona Open"}
+{"id":"CGT","desc":"CGT"}
+{"id":"DAUSA","desc":"Joan Dausà"}
+{"id":"JOSEPBOU","desc":"Josep Bou"}
+{"id":"MANUELVALLS","desc":"Manuel Valls"}
+{"id":"IRLANDANORD","desc":"Irlanda del Nord"}
+{"id":"PEGASUS","desc":"Pegasus"}
+{"id":"CONGRES","desc":"Congrés dels Diputats"}
+{"id":"MESPAIS","desc":"Més País"}
+{"id":"MELILLA","desc":"Melilla"}
+{"id":"DEPEDROLO","desc":"Manuel de Pedrolo"}
+{"id":"MACAPMANY","desc":"Maria Aurèlia Capmany"}
+{"id":"IRLANDA","desc":"Irlanda"}
+{"id":"ERNMARAGALL","desc":"Ernest Maragall"}
+{"id":"VEROLAMICO","desc":"Verola del mico"}
+{"id":"CONSELL21D","desc":"21D"}
+{"id":"ELE28M2023","desc":"Eleccions municipals 2023"}
+{"id":"AP7","desc":"AP-7"}
+{"id":"TIKTOK","desc":"TikTok"}
+{"id":"ARAGO","desc":"Aragó"}
+{"id":"GRECIA","desc":"Grècia"}
+{"id":"BELGICA","desc":"Bèlgica"}
+{"id":"VTC","desc":"VTC"}
+{"id":"SUISSA","desc":"Suïssa"}
+{"id":"VIATGEGASTRO","desc":"Viatges i gastronomia"}
+{"id":"TJUE","desc":"TJUE"}
+{"id":"DE7A9ANYS","desc":"De 7 a 9 anys"}
+{"id":"DE10A14ANYS","desc":"De 10 a 14 anys"}
+{"id":"YOLANDADIAZ","desc":"Yolanda Díaz"}
+{"id":"DEBATCONGRES","desc":"Debat Política General Congrés"}
+{"id":"OCINOCTURN","desc":"Oci nocturn "}
+{"id":"LEWANDOWSKI","desc":"Lewandowski"}
+{"id":"HONGRIA","desc":"Hongria"}
+{"id":"ORBAN","desc":"Viktor Orbán"}
+{"id":"NIGERIA","desc":"Nigèria"}
+{"id":"MART","desc":"Mart"}
+{"id":"LIBERDROLA","desc":"Lliga Iberdrola"}
+{"id":"ANIVERS17A","desc":"Aniversari atemptats 17A "}
+{"id":"LAVUELTA","desc":"La Vuelta"}
+{"id":"BALANCES","desc":"Balances fiscals"}
+{"id":"ANTARTIDA","desc":"Antàrtida"}
+{"id":"LAMINEYAMAL","desc":"Lamine Yamal"}
+{"id":"LIZTRUSS","desc":"Liz Truss"}
+{"id":"TABARNIA","desc":"Tabarnia"}
+{"id":"TDAH","desc":"TDAH"}
+{"id":"COREASUD","desc":"Corea del Sud"}
+{"id":"CRISIGOVERN","desc":"Crisi de govern"}
+{"id":"FISCALIAGEN","desc":"Fiscalia General de l'Estat"}
+{"id":"PUA_ESTRESX3","desc":"Estrenes SX3"}
+{"id":"MARINELEPEN","desc":"Marine Le Pen"}
+{"id":"DONESINSPIRA","desc":"Dones inspiradores"}
+{"id":"TWITCH","desc":"Twitch"}
+{"id":"AMARQUEZ","desc":"Àlex Márquez"}
+{"id":"PAISOSBAIXOS","desc":"Països Baixos "}
+{"id":"MUNI26M","desc":"Eleccions municipals 26M"}
+{"id":"MANEL","desc":"Manel"}
+{"id":"RISHISUNAK","desc":"Rishi Sunak"}
+{"id":"LULADASILVA","desc":"Lula da Silva"}
+{"id":"LUTHERKING","desc":"Martin Luther King "}
+{"id":"PUA_MONMIC","desc":"El món del Mic"}
+{"id":"OPERA","desc":"Òpera"}
+{"id":"XIMOPUIG","desc":"Ximo Puig"}
+{"id":"KINGSLEAGUE","desc":"Kings League"}
+{"id":"CORREDORMED","desc":"Corredor Mediterrani"}
+{"id":"DIAINFANCIA","desc":"Dia Mundial de la Infància"}
+{"id":"TV3GOYA","desc":"TV3 als Goya"}
+{"id":"GAUDI","desc":"Premis Gaudí "}
+{"id":"MIKINUNEZ","desc":"Miki Nuñez"}
+{"id":"AUTOMOCIO","desc":"Automoció"}
+{"id":"PUYAL","desc":"Joaquim Maria Puyal"}
+{"id":"CCLIMATICA","desc":"Crisi climàtica"}
+{"id":"GANDHI","desc":"Mahatma Gandhi "}
+{"id":"GIBRALTAR","desc":"Gibraltar"}
+{"id":"DIARADIO","desc":"Dia Mundial de la Ràdio"}
+{"id":"NOUNOVEMBRE","desc":"9N"}
+{"id":"CASNEGREIRA","desc":"CAS NEGREIRA"}
+{"id":"PUA_MANBETA","desc":"Manualitats Beta"}
+{"id":"JLAPORTA","desc":"Laporta"}
+{"id":"CLINIC","desc":"Hospital Clínic"}
+{"id":"CARLOSCUEVAS","desc":"Carlos Cuevas"}
+{"id":"SVB","desc":"Silicon Valley Bank"}
+{"id":"MELONI","desc":"Giorgia Meloni"}
+{"id":"SUMAR","desc":"Sumar"}
+{"id":"CANTABRIA","desc":"Cantàbria "}
+{"id":"VALENTS","desc":"Valents"}
+{"id":"SBUSQUETS","desc":"Busquets"}
+{"id":"ELECCIONS28A","desc":"Eleccions 28A"}
+{"id":"CATNORD","desc":"Catalunya Nord"}
+{"id":"SERBIA","desc":"Sèrbia"}
+{"id":"ASSETJAMENT","desc":"Assetjament"}
+{"id":"PUA_TITO","desc":"Titó"}
+{"id":"VINICIUS","desc":"Vinícius"}
+{"id":"SCC","desc":"Societat Civil Catalana"}
+{"id":"AUTONOMIQUES","desc":"Eleccions autonòmiques 2023"}
+{"id":"MUNDIALFEM","desc":"Mundial Femení"}
+{"id":"EINDHOVEN","desc":"CHAMPIONS EINDHOVEN"}
+{"id":"ANNSIMO","desc":"Anna Simó"}
+{"id":"CAMBRAY","desc":"Josep Gonzàlez-Cambray"}
+{"id":"JOAOFELIX","desc":"Joao Félix"}
+{"id":"FILIPINES","desc":"Filipines"}
+{"id":"PUTAGSSUPER3","desc":"SX3"}
+{"id":"DAMIACALVET","desc":"Damià Calvet"}
+{"id":"CROACIA","desc":"Croàcia"}
+{"id":"SENAT","desc":"Senat"}
+{"id":"EXTREMADURA","desc":"Extremadura"}
+{"id":"GAMELAB","desc":"Gamelab"}
+{"id":"EDUCASEXUAL","desc":"Educació sexual"}
+{"id":"ESTERCAPELLA","desc":"Ester Capella"}
+{"id":"MIREIAVEHI","desc":"Mireia Vehí"}
+{"id":"VCOPAAMERICA","desc":"Vela - Copa Amèrica"}
+{"id":"PNB","desc":"PNB"}
+{"id":"MAZON","desc":"Carlos Mazón"}
+{"id":"MARTIPOL","desc":"Miquel Martí i Pol"}
+{"id":"AUTO26M","desc":"Eleccions autonòmiques 26M"}
+{"id":"JAVIERMILEI","desc":"Javier Milei "}
+{"id":"EQUADOR","desc":"Equador"}
+{"id":"ARMENGOL","desc":"Francina Armengol"}
+{"id":"TAIWAN","desc":"Taiwan"}
+{"id":"AITANABONMAT","desc":"Aitana Bonmatí"}
+{"id":"LUISRUBIALES","desc":"Luis Rubiales"}
+{"id":"AMNISTIA","desc":"Amnistia"}
+{"id":"HAMASISRAEL","desc":"Guerra a Gaza"}
+{"id":"MARCGUIU","desc":"Marc Guiu"}
+{"id":"HAMAS","desc":"Hamas"}
+{"id":"SINNFEIN","desc":"Sinn Féin "}
+{"id":"ARMILLESGROG","desc":"Armilles Grogues"}
+{"id":"LECTURAFACIL","desc":"Lectura Fàcil"}
+{"id":"ANNAERRA","desc":"Anna Erra"}
+{"id":"PAMIES","desc":"Teresa Pàmies"}
+{"id":"TAPIES","desc":"Antoni Tàpies"}
+{"id":"DINAMARCA","desc":"Dinamarca"}
+{"id":"PERUCHO","desc":"Joan Perucho"}
+{"id":"ELECCIONSUE","desc":"Eleccions europees 2024"}
+{"id":"BB_CALCOTS","desc":"Receptes amb calçots"}
+{"id":"PCUBARSI","desc":"Pau Cubarsí"}
+{"id":"ESTELLES","desc":"Vicent Andrés Estellés"}
+{"id":"MASCORT","desc":"David Mascort"}
+{"id":"EUSKGALIC","desc":"Eleccions a Euskadi i Galícia "}
+{"id":"JMFLOTATS","desc":"Josep Maria Flotats"}
+{"id":"CASKOLDO","desc":"Cas Koldo"}
+{"id":"CAT55888","desc":"Incendi València"}
+{"id":"PRESONS","desc":"Presons"}
+{"id":"EUFORIA","desc":"Eufòria"}
+{"id":"FARC","desc":"FARC"}
+{"id":"PUA_POTPETIT","desc":"Les manualitats d'El món del Pot Petit"}
+{"id":"RECOMANAJORD","desc":"Recomanacions Sant Jordi"}
+{"id":"MBAPPE","desc":"kylian Mbappé"}
+{"id":"ACATALANA","desc":"Aliança Catalana"}
+{"id":"MON3CAT","desc":"Món 3Cat"}
+{"id":"HFLICK","desc":"Hansi Flick"}
+{"id":"EUROCOPA2024","desc":"Eurocopa 2024"}
+{"id":"LLENGUABLAVA","desc":"Llengua blava "}
+{"id":"EUAELECCIONS","desc":"Eleccions Estats Units 2024"}
+{"id":"PUA_EXCURSX3","desc":"Excursions per fer en família"}
+{"id":"ALGUER","desc":"Alguer"}
+{"id":"ORRIOLS","desc":"Sílvia Orriols"}
+{"id":"EXPLICATIUS","desc":"Explicatius"}
+{"id":"STARMER","desc":"Keir Starmer"}
+{"id":"LIBAN","desc":"Líban"}
+{"id":"HEZBOLA","desc":"Hezbollah"}
+{"id":"VAR","desc":"VAR"}
+{"id":"POLICIALJUDI","desc":"Policial i judicial"}
+{"id":"FEMENISMEGEN","desc":"Feminisme i gènere"}
+{"id":"SOCIETAT","desc":"Societat"}
+{"id":"MEDICLIMA","desc":"Medi ambient i crisi climàtica"}
+{"id":"CULTURA","desc":"Cultura"}
+{"id":"DESIGUPOBRE","desc":"Desigualtat i pobresa"}
+{"id":"CIENCIATECNO","desc":"Ciència i tecnologia"}
+{"id":"ZENIT","desc":"Zenit"}
+{"id":"POLITICA","desc":"Política"}
+{"id":"INTERNACIONA","desc":"Internacional"}
+{"id":"UNIVERS3CAT","desc":"Univers 3Cat"}
+{"id":"VERIFICACIO","desc":"3CatInfo Verifica"}
+{"id":"LATARDACR","desc":"La tarda de Catalunya Ràdio"}
+{"id":"FEINA","desc":"Feina"}
+{"id":"ARANES","desc":"Aranès"}
+{"id":"ECOIFINANCES","desc":"Economia i finances"}
+{"id":"CRIA","desc":"Criança"}
+{"id":"ARRAN","desc":"Arran"}
+{"id":"METEOCURIOS","desc":"Curiositats meteorològiques"}
+{"id":"ELFORASTER","desc":"El foraster"}

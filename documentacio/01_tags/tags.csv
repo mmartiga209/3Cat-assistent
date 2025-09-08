@@ -1,0 +1,815 @@
+id,desc
+METEOROLOGIA,Meteorologia
+TEMPSAZ,El temps de la A a la Z
+CULTPOPULAR,Cultura popular
+NADAL,Nadal
+SERIES,Sèries
+ELISABETII,Reina Elisabet II
+MONARQUIA,Monarquia
+REGNEUNIT,Regne Unit
+CARLESIII,Carles III
+CONSELLCUINA,Consells de cuina
+CUINANADAL,Receptes de Nadal
+BB_SOPES,Sopes d'hivern
+PUTAGSTV3,Tv3
+MITJANSCOM,Mitjans de comunicació
+SALUT,Salut
+SABATER,Carles Sabater
+MUSICA,Música
+MASCLISME,Masclisme 
+IGUALTATGEN,Igualtat de gènere
+SANTJORDI,Sant Jordi 
+CIENCIA,Ciència
+GENERALS23J,Eleccions Generals 2023 - 23J
+RELIGIO,Religió
+PIQUE,Gerard Piqué
+MESSI,Messi
+BARTOMEU,Josep Maria Bartomeu
+PUTAGSTEMPS,El temps
+INUNDACIONS,Inundacions 
+OBITUARI,Obituari
+PERSMEDIA,Personatges mediàtics
+JORDIPUJOL,Jordi Pujol
+EXTREMADRETA,Extrema dreta
+BANCA,Banca
+CORONAVIRUS,Coronavirus 
+MEDIAMBIENT,Medi ambient
+SIXENA,Sixena
+CRISICLIMA,Crisi climàtica
+JOEBIDEN,Joe Biden
+ELECCIONSEUA,Eleccions Estats Units
+ASSETJESCOLA,Assetjament escolar
+TELEVISIO,Televisió
+MENORS,Menors
+EDUCACIO,Educació 
+INTERNET,Internet
+SOMDONES,Som dones
+REFUGIATS,Refugiats
+ELECCIONS21,Eleccions Parlament Catalunya 2021
+JOCSOLIMPICS,Jocs Olímpics
+ANY2008,2008
+ANY2002,2002
+ANY1999,1999
+ANY1984,1984
+ANY1998,1998
+ART,Art
+PUTAGSCULT,Cultura
+PATRIMONI,Patrimoni
+POLICIAL,Policial
+ESTATSUNITS,Estats Units
+RACISME,Racisme
+URBANISME,Urbanisme 
+COVID,Covid-19
+BCE,Banc Central Europeu
+ELSDINERS,Economia de butxaca
+JUDICIAL,Judicial
+VMASCLISTA,Violència masclista
+MIGRACIONS,Migracions
+OPENARMS,Open Arms
+DRETSHUMANS,Drets humans
+ACB,ACB
+CUBA,Cuba
+PEREARAGONES,Pere Aragonès
+FRANCA,França
+TRANSIT,Trànsit
+BREXIT,Brexit
+UNIOEUROPEA,Unió Europea
+INCENDIS,Incendis
+ALEMANYA,Alemanya
+RESIDENCIES,Residències gent gran 
+VACUNES,Vacunes
+VIRAL,Viral 
+TRAPERO,Josep Lluís Trapero 
+MIQUELSAMPER,Miquel Sàmper
+MADRID,Comunitat de Madrid
+AGRESSIOSEX,Agressió sexual
+TECNOLOGIA,Tecnologia
+TRUMP,Trump 
+IRAQ,Iraq
+IRAN,Iran
+BORBON,Borbons
+KOEMAN,Koeman
+PROCES,Procés català
+JUDICIPROCES,Judici procés
+ASSANGE,Julian Assange
+POBRESA,Pobresa
+CDR,CDR
+FASEDESESCAL,Fases de la desescalada
+MOBILITAT,Mobilitat
+CONFINAMENT,Confinament 
+ELECCIONSFCB,Eleccions Barça
+CINEMA,Cinema
+XINA,Xina
+TEATRE,Teatre
+QUIMTORRA,Quim Torra
+ESCOCIA,Escòcia 
+ATUR,Atur
+PROCICAT,Procicat
+CONTAMINACIO,Contaminació
+UNIVERSITAT,Universitat
+RAMADERIA,Ramaderia
+ILLESBALEARS,Illes Balears
+METRO,Metro
+RUSSIA,Rússia
+DESESCALADA,Desescalada
+HABITATGE,Habitatge
+FELIPVI,Felip VI
+CASAREIAL,Casa Reial espanyola 
+EXERCITESP,Exèrcit espanyol
+LOTERIA,Loteria
+VNLA,Veneçuela
+VOX,Vox
+PAISVALENCIA,País Valencià
+LITERATURA,Literatura
+NASA,NASA
+ESTACIO,Estació Espacial Internacional
+XARXASOCIAL,Xarxes socials 
+FACEBOOK,Facebook
+TWITTER,Twitter
+PSANCHEZ,Pedro Sánchez
+PSOE,PSOE
+PIGLESIAS,Pablo Iglesias
+PODEM,Unides Podem
+NBA,NBA
+LLUISPUIG,Lluís Puig
+PENYA,Penya
+MOSSOS,Mossos d'Esquadra
+CORRUPCIO,Corrupció
+JXCAT,Junts
+ERC,ERC
+PSC,PSC
+LLIBEXPRESSI,Llibertat d'expressió 
+NAZISME,Nazisme
+BITCOIN,Bitcoin
+COMERC,Comerç
+GUARDIACIVIL,Guàrdia Civil
+NARCOTRAFIC,Narcotràfic
+RECERCA,Recerca científica
+NEVADES,Nevades
+AMBLACULTURA,Impulsem Cultura
+DRETSLABORAL,Drets laborals
+ANY2015,2015
+ANY2009,2009
+ANY2006,2006
+AFRICA,Àfrica
+ZIDANE,Zidane
+SEGONAGUERRA,Segona Guerra Mundial
+MANRESA,Bàsquet Manresa
+EUROLLIGA,Eurolliga
+TERRORISME,Terrorisme
+JIHADISME,Jihadisme 
+ENERGIA,Energia
+ENERGETICA,Pobresa energètica
+SEAT,Seat
+PROSTITUCIO,Prostitució
+REFERENDUM,Referèndum 1-O
+MERKEL,Angela Merkel
+ITALIA,Itàlia
+FEMINISME,Feminisme
+ANIMAL,Maltractament animal
+ESGLESIA,Església
+LGTBI,LGTBIQ+
+PENADEMORT,Pena de mort
+AJBARCELONA,Ajuntament de Barcelona
+MACRON,Emmanuel Macron
+ANY2012,2012
+TURISME,Turisme
+DROGUES,Drogues
+JOHNSON,Boris Johnson
+CONSUM,Consum
+AEROPORTS,Aeroports
+TELETREBALL,Teletreball
+ECOLOGIA,Ecologia
+ALIMENTACIO,Alimentació
+RAMONTREMOSA,Ramon Tremosa
+AUTONOMS,Autònoms
+ARQUEOLOGIA,Arqueologia
+PDECAT,PDeCAT
+VILLAREJO,José Manuel Villarejo
+HELENAJUBANY,Helena Jubany
+ISRAEL,Israel
+PALESTINA,Palestina
+BOLSONARO,Jair Bolsonaro
+AMAZONIA,Amazònia
+BRASIL,Brasil
+FRAUFISCAL,Frau fiscal
+ATEMPTATSBCN,Atemptats Barcelona Cambrils
+WHATSAPP,WhatsApp
+SALVADORILLA,Salvador Illa
+TOCDEQUEDA,Toc de queda
+MINGOTE,Sergi Mingote
+MARIHUANA,Marihuana
+GUB,Guàrdia Urbana 
+PARLAMENTCAT,Parlament de Catalunya
+PEDERASTIA,Pederàstia 
+EMPRESA,Empresa
+PUIGDEMONT,Carles Puigdemont
+GOVERNPRESO,Govern empresonat
+PREMISGOYA,Premis Goya
+CIFUENTES,Cristina Cifuentes
+ALTSASU,Altsasu
+CUINA,Cuina
+ACTUOCLIMA,Jo també actuo pel clima
+GUARDIOLA,Guardiola
+PUTIN,Vladímir Putin
+ASSETJSEXUAL,Assetjament sexual 
+KAMALAHARRIS,Kamala Harris
+GASTRONOMIA,Gastronomia
+DIGITALS,Digital 
+COROMINES,Joan Coromines
+LAVOLTA,La Volta
+MALVERSACIO,Malversació
+CAT54204,Àustria
+RODALIES,Rodalies
+RENFE,Renfe
+ANDORRA,Andorra
+GLORIA,Temporal Gloria
+INFRAESTRUCT,Infraestructures
+AGRICULTURA,Agricultura
+URDANGARIN,Urdangarin
+NOOS,Nóos
+CATALA,Català 
+OMS,OMS
+RMADRID,Reial Madrid
+HOMOFOBIA,Homofòbia
+FOTOGRAFIA,Fotografia 
+TSJC,TSJC
+MODA,Moda
+SEGURETAT,Seguretat
+POLINACIONAL,Policia Nacional
+VENTADES,Ventades
+BOMBERS,Bombers
+AVORTAMENT,Avortament 
+ANY1995,1995
+ANY2019,2019
+ANY2000,2000
+ANY2017,2017
+ANY2010,2010
+AMAZON,Amazon
+GALICIA,Galícia
+ELECCIONS,Eleccions
+EGIPTE,Egipte
+XENOFOBIA,Xenofòbia
+PP,PP
+SAGRFAMILIA,Sagrada Família
+ADACOLAU,Ada Colau
+ENCOMU,Comuns
+ESPIONATGE,Espionatge
+ALZHEIMER,Alzheimer
+AN,Audiència Nacional
+AVE,AVE
+RAFANADAL,Rafa Nadal
+MIQUELICETA,Miquel Iceta
+TC,Tribunal Constitucional 
+ALBAVERGES,Alba Vergés
+ANDALUSIA,Andalusia
+CS,Cs
+CUP,CUP
+TRANSPUBLIC,Transport públic
+CANCER,Càncer
+ANY2014,2014
+DELICTESECO,Delictes econòmics
+ANY2020,2020
+BORSA,Borsa 
+SUPREM,Tribunal Suprem 
+ARTURMAS,Artur Mas
+PREMISGAUDI,Premis Gaudí
+MEXIC,Mèxic
+HASEL,Pablo Hasél
+FAMILIA,Família 
+LAURABORRAS,Laura Borràs
+BIOMEDICINA,Biomedicina
+ANY1988,1988
+EUTANASIA,Eutanàsia
+MUSEUS,Museus
+VONDERLEYEN,Ursula von der Leyen
+COMISSIOEU,Comissió Europea
+FORCADELL,Carme Forcadell
+JOCAPOSTES,Joc i apostes
+MARADONA,Maradona
+BIRMANIA,Birmània
+ROHINGYES,Rohingyes
+ESTATALARMA,Estat d'alarma
+SOSTENIBILIT,Sostenibilitat
+OMNIUM,Òmnium Cultural
+JORDICUIXART,Jordi Cuixart
+JORDISANCHEZ,Jordi Sànchez
+JUNQUERAS,Oriol Junqueras
+DOLORSBASSA,Dolors Bassa
+RAULROMEVA,Raül Romeva
+JORDITURULL,Jordi Turull
+JOSEPRULL,Josep Rull
+JOAQUIMFORN,Joaquim Forn
+HIPOTEQUES,Hipoteques
+GENERALITAT,Generalitat de Catalunya
+PENSIONS,Pensions
+ISLAM,Islam
+ISLAMOFOBIA,Islamofòbia
+IGNGARRIGA,Ignacio Garriga
+GRIEZMANN,Griezmann
+MRAJOY,Mariano Rajoy
+CARLESRIERA,Carles Riera
+DSABATER,Dolors Sabater
+PUTAGSCR,Catalunya Ràdio
+GRETACLIMA,Greta Thunberg
+AFERNANDEZ,Alejandro Fernández
+ELECTORAL,Eleccions Parlament Catalunya 2024
+OKLLIGA,OKLliga
+ALBIACH,Jéssica Albiach
+MARQUEZ,Marc Màrquez
+CRIPTOMONEDA,Criptomonedes
+NEYMAR,Neymar
+MARROC,Marroc
+PESCA,Pesca
+TSUNAMIDEM,Tsunami Democràtic
+PAISBASC,País Basc
+INSTAGRAM,Instagram
+ANY1996,1996
+BRETXASALARI,Bretxa salarial
+PRECARIETAT,Precarietat laboral
+PREMSA,Llibertat de premsa
+UMTITI,Umtiti
+ANGELSCHACON,Àngels Chacón
+ARRIMADAS,Inés Arrimadas
+CARRIZOSA,Carlos Carrizosa
+AGULLO,Guillem Agulló
+FRANCO,Francisco Franco
+MEMHISTORICA,Memòria històrica 
+FRANQUISME,Franquisme
+MWC,Mobile World Congress
+INDEP,Independència
+LNFS,LNFS
+ETA,ETA
+NOVAZELANDA,Nova Zelanda
+SIRIA,Síria
+DELICTEODI,Delicte d'odi
+FEIXISME,Feixisme
+CAYETANA,Cayetana Álvarez de Toledo
+PCASADO,Pablo Casado
+JOANMARGARIT,Joan Margarit
+SIMONEBILES,Simone Biles
+ARCADIOLIVER,Arcadi Oliveres
+GOOGLE,Google
+PARLAMENTUE,Parlament Europeu
+LLARENA,Pablo Llarena
+TONICOMIN,Toni Comín
+CLARAPONSATI,Clara Ponsatí
+GAZA,Gaza
+PU_MARATO,La Marató
+MIQUELBUCH,Miquel Buch
+PAUGASOL,Pau Gasol
+REFLEXIONS,Reflexions des del confinament
+SIDA,Sida
+ANY1986,1986
+ANY1990,1990
+ANY1993,1993
+ANY2021,2021
+ANY2013,2013
+ANY2004,2004
+PROXIMORIENT,Pròxim Orient 
+ESTATISLAMIC,Estat Islàmic
+IMMOBILIARI,Mercat immobiliari
+ANY1991,1991
+ANY1983,1983
+ANY2005,2005
+ANY1994,1994
+ANY2011,2011
+ANY1987,1987
+ONU,ONU
+ANY1997,1997
+ARGENTINA,Argentina
+ALFREDBOSCH,Alfred Bosch
+ANSUFATI,AnsuFati
+VAGADIADONA,8M
+PUNICA,Púnica
+CGPJ,CGPJ
+ASAUDITA,Aràbia Saudita
+KHASHOGGI,Jamal Khashoggi
+TURQUIA,Turquia
+TABAC,Tabac
+GUERRACIVIL,Guerra Civil espanyola 
+VIDEOJOCS,Videojocs
+COREANORD,Corea del Nord
+ANC,ANC
+PRIMAVERASOU,Primavera Sound
+BGATE,Barçagate
+AFGANISTAN,Afganistan
+PAPAFRANCESC,Papa Francesc
+XILE,Xile
+FINLANDIA,Finlàndia
+KURDISTAN,Kurdistan
+KURDS,Kurds
+FLOYD,George Floyd
+MSERRET,Meritxell Serret
+MOCIOCENSURA,Moció de censura
+ANY2007,2007
+ANY2018,2018
+AGUERO,Agüero
+BOLIVIA,Bolívia 
+EVOMORALES,Evo Morales
+SEDICIO,Sedició
+BIELORRUSSIA,Bielorússia 
+EUROVISIO,Festival d'Eurovisió
+BARCENAS,Luis Bárcenas
+ROSALIA,Rosalía
+CATALUNYA,Catalunya
+PREMISOSCARS,Premis Oscar
+AMIANT,Amiant
+ABALOS,José Luis Ábalos
+RTORRENT,Roger Torrent
+IBEX35,IBEX 35
+ERREJON,Íñigo Errejón
+COMIC,Còmic
+PUTAGESPORTS,Esports
+DONESCIENCIA,Dones i ciència
+SUAREZ,Luis Suárez
+ABIDAL,Abidal
+CONSELLDEURO,Consell d'Europa
+TRAMVIA,Tramvia
+SINDROMEDOWN,Síndrome de Down 
+CASTELLERS,Castellers
+AZNAR,José María Aznar
+SUEZ,Suez
+INVESTIDURA,Investidura
+ANOREXIA,Anorèxia
+INDULTS,Indults
+ZBEBARCELONA,ZBE Barcelona
+JAPO,Japó
+MARLASKA,Fernando Grande-Marlaska
+NAVALNI,Aleksei Navalni
+VAGAFAM,Vaga de fam
+PERPINYA,Perpinyà
+INVCATALANS,Investigadors catalans
+PROTECCIODAD,Protecció de dades
+LSANZ,Laia Sanz
+DEMBELE,Dembélé
+OTEGI,Arnaldo Otegi
+PREGUCORONA,Preguntes i respostes coronavirus
+ELCLASSIC,El Clàssic
+MARCGASOL,Marc Gasol
+ANY2016,2016
+CAT52711,La Manada
+BULLYING,Bullying
+ARTICLE155,Article 155
+ERDOGAN,Recep Tayip Erdogan
+AYUSO,Isabel Díaz Ayuso
+TRANSGENERE,Dia de la visibilitat transgènere
+BAFTA,Premis Bafta
+FUKUSHIMA,Fukushima
+EGM,EGM
+FMI,Fons Monetari Internacional 
+TXERNOBIL,Txernòbil
+BIODIVERSITA,Biodiversitat
+JORNET,Kilian Jornet
+ASOBAL,ASOBAL
+BORRELL,Josep Borrell
+SUPERLLIGA,Superlliga
+ANY1989,1989
+TOPCATRADIO,Top CatRàdio
+UWCLGOTERBOG,Final Champions Göteborg
+POLISARIO,Front Polisario
+UCRAINA,Ucraïna
+ANTIFEIXISME,Antifeixisme 
+ARQUITECTURA,Arquitectura
+PARKINSON,Parkinson
+PEATGES,Peatges
+LLUNA,La Lluna
+SALUTMENTAL,Salut Mental
+APPLE,Apple
+ELECALEMANYA,Eleccions Alemanya 
+BAERBOCK,Annalena Baerbock
+NOTISFALSES,Notícies falses
+ELSAARTADI,Elsa Artadi
+INDIA,L'Índia 
+COLOMBIA,Colòmbia
+TERSTEGEN,Ter Stegen
+INIESTA,Iniesta
+EURO2020,Eurocopa2020
+TAXIS,Taxis
+CEUTA,Ceuta
+ANY1992,1992
+SAHARA,Sàhara Occidental
+PUTAGS324,Notícies
+CAMERICA,Copa Amèrica
+PESI,Svetislav Pesic 
+ANY2001,2001
+PREMICULTURA,Premis Nacionals de Cultura
+CANADA,Canadà
+JORDPUIGNERO,Jordi Puigneró
+AIGUESBCN,Aigües de Barcelona
+SRILANKA,Sri Lanka
+PIRATERIA,Pirateria
+CERTIFICAT,Certificat Covid
+SANTJOAN,Sant Joan
+BELARRA,Ione Belarra
+SUSANADIAZ,Susana Díaz 
+SEQUERA,Sequera
+HONGKONG,Hong Kong
+ATEMPTATS11S,11S Atemptats
+BARCAB,Barça B
+TOURDEFRANCA,Tour de França
+RALIS,Mundial de ral·lis
+GOVERNESP,Govern espanyol
+CANNABIS,Cànnabis
+MONCLOA,Moncloa
+MONTSERRAT,Abadia de Montserrat
+PROTESTESEUA,Protestes EUA
+VATICA,Vaticà
+REBELIO,Rebel·lió
+CONSTITUCIOE,Constitució espanyola
+EMMY,Premis Emmy
+CANNES,Festival de Canes
+HORTASTJOAN,Incendi Horta de Sant Joan
+PGE,Pressupostos Generals de l'Estat
+RIGOBANDINI,Rigoberta Bandini
+AUTONOMIC,Finançament autonòmic
+TALIBANS,Talibans
+HOLOCAUST,Holocaust
+ALGERIA,Algèria
+ONADACALOR,Onada de calor
+IPC,IPC 
+COUTINHO,Coutinho
+OPJUDES,Operació Judes
+AUTOPISTES,Autopistes
+MARMENOR,Mar Menor
+GURTEL,Gürtel
+CASTELLVI,Josefina Castellví 
+MEDALLAOR,Medalla d'Or de la Generalitat
+CONSELLREP,Consell per la República
+LAMERCE,La Mercè
+CAT52966,Marta Rovira
+AEROPORTPRAT,Aeroport del Prat
+CASPALU,Cas Palau
+SELECTIVITAT,Selectivitat
+ALQAEDA,Al Qaeda
+MADURO,Nicolás Maduro 
+DIADA,11S
+JUANMAMORENO,Juan Manuel Moreno
+ARTIFICIAL,Intel·ligència artificial
+NORUEGA,Noruega
+ALVES,DaniAlves
+AUSTRALIA,Austràlia
+NOTREDAME,Notre-Dame
+CUMBREVIEJA,Volcà Cumbre Vieja
+CANARIES,Les Canàries 
+LAPALMA,La Palma
+PAKISTAN,Pakistan
+ENRICMILLO,Enric Millo
+HUAWEI,Huawei
+DEBAT,Debat política general
+COLLBONI,Jaume Collboni 
+PILOTADOR,Pilota d'Or
+JUDTRAPERO,Judici Trapero
+XAVI,Xavi Hernández
+NOBEL,Premi Nobel
+HCATALANA,Hisenda catalana
+FESTIVSITGES,Festival de Sitges
+HISPANITAT,12-O
+TITANDESERT,Titan Desert
+PAUDONES,Pau Donés
+XAVIERALBIOL,Xavier García Albiol 
+CASTOR,Castor
+CCOO,CCOO
+UGT,UGT
+BILDU,Bildu
+SANDROROSELL,Sandro Rosell
+BMGRANOLLERS,BM Granollers
+CALENDARI,Calendari laboral
+DERBI,El Derbi
+PRESSUPOST,Pressupostos de la Generalitat 
+CIBERDELICTE,Ciberdelicte
+VALTONYC,Valtònyc
+FESTIVASONAR,Sónar
+NISSAN,Nissan
+MUNDIAL2018,Mundial Qatar 2022
+BADOSA,Paula Badosa
+ESTILDEVIDA,Estil de vida
+CISJORDANIA,Cisjordània
+IGM,Primera Guerra Mundial
+ABASCAL,Santiago Abascal 
+ESPAIFCB,Espai Barça
+PUERTORICO,Puerto Rico
+E360,Esports360
+REUS,Reus
+AGTRIBUTARIA,Agència Tributària 
+ERTO,ERTO
+TRANSFOBIA,Transfòbia
+CEOE,CEOE
+OMICRON,Òmicron
+SANDREUBARCA,Sant Andreu de la Barca
+THERESAMAY,Theresa May
+PORTUGAL,Portugal
+INFANCIA,Infància 
+ALEXIAPUTELL,Alèxia Putellas
+IMMERSIOLING,Immersió lingüística
+KAZAKHSTAN,Kazakhstan 
+SASSOLI,David Sassoli
+INTERPOL,Interpol
+CARLASIMON,Carla Simón
+ASIA,Àsia
+SETEMBRE,20S
+RBOFILL,Ricardo Bofill
+AI,Amnistia Internacional
+MALI,Mali
+QUERALTCASTE,Queralt Castellet
+ALBERTRIVERA,Albert Rivera
+PAURIBA,Pau Riba
+JJOOCONSULTA,Jocs Olímpics Hivern 
+ZELENSKI,Volodímir Zelenski
+DOMINICANA,República Dominicana
+HAITI,Haití
+OTAN,OTAN
+DEPOBLAMENT,Despoblament 
+FEIJOO,Alberto Núñez Feijóo
+MIDCAT,Midcat
+RUFIAN,Gabriel Rufián
+TRANSPORT,Transport de mercaderies
+CONSELLEUROP,Consell Europeu
+CUCAGAMARRA,Cuca Gamarra
+ELECFRAN,Eleccions França 2022
+IRPF,IRPF
+FP,Formació Professional 
+PUAGR_ACTFAM,Activitats en família
+CATALANGATE,Catalangate
+SUECIA,Suècia 
+BOBS,Barcelona Open
+CGT,CGT
+DAUSA,Joan Dausà
+JOSEPBOU,Josep Bou
+MANUELVALLS,Manuel Valls
+IRLANDANORD,Irlanda del Nord
+PEGASUS,Pegasus
+CONGRES,Congrés dels Diputats
+MESPAIS,Més País
+MELILLA,Melilla
+DEPEDROLO,Manuel de Pedrolo
+MACAPMANY,Maria Aurèlia Capmany
+IRLANDA,Irlanda
+ERNMARAGALL,Ernest Maragall
+VEROLAMICO,Verola del mico
+CONSELL21D,21D
+ELE28M2023,Eleccions municipals 2023
+AP7,AP-7
+TIKTOK,TikTok
+ARAGO,Aragó
+GRECIA,Grècia
+BELGICA,Bèlgica
+VTC,VTC
+SUISSA,Suïssa
+VIATGEGASTRO,Viatges i gastronomia
+TJUE,TJUE
+DE7A9ANYS,De 7 a 9 anys
+DE10A14ANYS,De 10 a 14 anys
+YOLANDADIAZ,Yolanda Díaz
+DEBATCONGRES,Debat Política General Congrés
+OCINOCTURN,Oci nocturn 
+LEWANDOWSKI,Lewandowski
+HONGRIA,Hongria
+ORBAN,Viktor Orbán
+NIGERIA,Nigèria
+MART,Mart
+LIBERDROLA,Lliga Iberdrola
+ANIVERS17A,Aniversari atemptats 17A 
+LAVUELTA,La Vuelta
+BALANCES,Balances fiscals
+ANTARTIDA,Antàrtida
+LAMINEYAMAL,Lamine Yamal
+LIZTRUSS,Liz Truss
+TABARNIA,Tabarnia
+TDAH,TDAH
+COREASUD,Corea del Sud
+CRISIGOVERN,Crisi de govern
+FISCALIAGEN,Fiscalia General de l'Estat
+PUA_ESTRESX3,Estrenes SX3
+MARINELEPEN,Marine Le Pen
+DONESINSPIRA,Dones inspiradores
+TWITCH,Twitch
+AMARQUEZ,Àlex Márquez
+PAISOSBAIXOS,Països Baixos 
+MUNI26M,Eleccions municipals 26M
+MANEL,Manel
+RISHISUNAK,Rishi Sunak
+LULADASILVA,Lula da Silva
+LUTHERKING,Martin Luther King 
+PUA_MONMIC,El món del Mic
+OPERA,Òpera
+XIMOPUIG,Ximo Puig
+KINGSLEAGUE,Kings League
+CORREDORMED,Corredor Mediterrani
+DIAINFANCIA,Dia Mundial de la Infància
+TV3GOYA,TV3 als Goya
+GAUDI,Premis Gaudí 
+MIKINUNEZ,Miki Nuñez
+AUTOMOCIO,Automoció
+PUYAL,Joaquim Maria Puyal
+CCLIMATICA,Crisi climàtica
+GANDHI,Mahatma Gandhi 
+GIBRALTAR,Gibraltar
+DIARADIO,Dia Mundial de la Ràdio
+NOUNOVEMBRE,9N
+CASNEGREIRA,CAS NEGREIRA
+PUA_MANBETA,Manualitats Beta
+JLAPORTA,Laporta
+CLINIC,Hospital Clínic
+CARLOSCUEVAS,Carlos Cuevas
+SVB,Silicon Valley Bank
+MELONI,Giorgia Meloni
+SUMAR,Sumar
+CANTABRIA,Cantàbria 
+VALENTS,Valents
+SBUSQUETS,Busquets
+ELECCIONS28A,Eleccions 28A
+CATNORD,Catalunya Nord
+SERBIA,Sèrbia
+ASSETJAMENT,Assetjament
+PUA_TITO,Titó
+VINICIUS,Vinícius
+SCC,Societat Civil Catalana
+AUTONOMIQUES,Eleccions autonòmiques 2023
+MUNDIALFEM,Mundial Femení
+EINDHOVEN,CHAMPIONS EINDHOVEN
+ANNSIMO,Anna Simó
+CAMBRAY,Josep Gonzàlez-Cambray
+JOAOFELIX,Joao Félix
+FILIPINES,Filipines
+PUTAGSSUPER3,SX3
+DAMIACALVET,Damià Calvet
+CROACIA,Croàcia
+SENAT,Senat
+EXTREMADURA,Extremadura
+GAMELAB,Gamelab
+EDUCASEXUAL,Educació sexual
+ESTERCAPELLA,Ester Capella
+MIREIAVEHI,Mireia Vehí
+VCOPAAMERICA,Vela - Copa Amèrica
+PNB,PNB
+MAZON,Carlos Mazón
+MARTIPOL,Miquel Martí i Pol
+AUTO26M,Eleccions autonòmiques 26M
+JAVIERMILEI,Javier Milei 
+EQUADOR,Equador
+ARMENGOL,Francina Armengol
+TAIWAN,Taiwan
+AITANABONMAT,Aitana Bonmatí
+LUISRUBIALES,Luis Rubiales
+AMNISTIA,Amnistia
+HAMASISRAEL,Guerra a Gaza
+MARCGUIU,Marc Guiu
+HAMAS,Hamas
+SINNFEIN,Sinn Féin 
+ARMILLESGROG,Armilles Grogues
+LECTURAFACIL,Lectura Fàcil
+ANNAERRA,Anna Erra
+PAMIES,Teresa Pàmies
+TAPIES,Antoni Tàpies
+DINAMARCA,Dinamarca
+PERUCHO,Joan Perucho
+ELECCIONSUE,Eleccions europees 2024
+BB_CALCOTS,Receptes amb calçots
+PCUBARSI,Pau Cubarsí
+ESTELLES,Vicent Andrés Estellés
+MASCORT,David Mascort
+EUSKGALIC,Eleccions a Euskadi i Galícia 
+JMFLOTATS,Josep Maria Flotats
+CASKOLDO,Cas Koldo
+CAT55888,Incendi València
+PRESONS,Presons
+EUFORIA,Eufòria
+FARC,FARC
+PUA_POTPETIT,Les manualitats d'El món del Pot Petit
+RECOMANAJORD,Recomanacions Sant Jordi
+MBAPPE,kylian Mbappé
+ACATALANA,Aliança Catalana
+MON3CAT,Món 3Cat
+HFLICK,Hansi Flick
+EUROCOPA2024,Eurocopa 2024
+LLENGUABLAVA,Llengua blava 
+EUAELECCIONS,Eleccions Estats Units 2024
+PUA_EXCURSX3,Excursions per fer en família
+ALGUER,Alguer
+ORRIOLS,Sílvia Orriols
+EXPLICATIUS,Explicatius
+STARMER,Keir Starmer
+LIBAN,Líban
+HEZBOLA,Hezbollah
+VAR,VAR
+POLICIALJUDI,Policial i judicial
+FEMENISMEGEN,Feminisme i gènere
+SOCIETAT,Societat
+MEDICLIMA,Medi ambient i crisi climàtica
+CULTURA,Cultura
+DESIGUPOBRE,Desigualtat i pobresa
+CIENCIATECNO,Ciència i tecnologia
+ZENIT,Zenit
+POLITICA,Política
+INTERNACIONA,Internacional
+UNIVERS3CAT,Univers 3Cat
+VERIFICACIO,3CatInfo Verifica
+LATARDACR,La tarda de Catalunya Ràdio
+FEINA,Feina
+ARANES,Aranès
+ECOIFINANCES,Economia i finances
+CRIA,Criança
+ARRAN,Arran
+METEOCURIOS,Curiositats meteorològiques
+ELFORASTER,El foraster

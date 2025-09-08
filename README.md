@@ -61,21 +61,14 @@ Això permet entendre millor el rol de cada assistent dins del conjunt del siste
 A més dels tres assistents, el repositori inclou la carpeta `documentacio/`, que conté **carpetes de treball i material de suport**.  
 Aquestes carpetes recullen el procés d’anàlisi, processament i proves realitzades durant el desenvolupament.  
 
-Alguns exemples de contingut:
-- `04_processament_noticies/` — preprocessament i neteja de notícies.  
-- `05_creacio_datasets/` — generació i organització de conjunts de dades.  
-- `06_processament_datasets/` — tractament posterior dels datasets.  
-- `07_estadistics/` — càlcul i visualització de mètriques.  
-- `08_bones_practiques/` — guies i criteris de treball.  
-- `09_tags/` — etiquetatge de notícies.  
-- `10_estudi_media_bias/` — anàlisi de biaixos mediàtics.  
-- `11_llibre_estil/` — documentació sobre el llibre d’estil.  
-- `12_joves_noticies/` — proves sobre notícies adreçades a joves.  
-- `13_rag_llibre_estil/` — experiments amb RAG aplicat al llibre d’estil.  
-- `14_seleccio_llibre_estil/` — selecció i validació de fragments del llibre d’estil.  
-- `15_extraccio_tweets_cites/` — recollida i extracció de cites de xarxes socials.  
-- `16_edatisme/` — anàlisi específic sobre edatisme.  
-- `17_mongoDB/` — integracions i proves amb bases de dades MongoDB.  
+Contingut
+- `00_media_bias/` — treball fet sobre el Media Bias Detector.  
+- `01_tags/` — etiquetatge i classificació de notícies.  
+- `02_joves_noticies/` — proves sobre el tema d'evitació de joves a les notícies.  
+- `03_seleccio_llibre_estil/` — selecció i validació de fragments del llibre d’estil. **AQUÍ ES PODEN VEURE ELS FRAGMENTS QUE S'HAN D'IMPLEMENTAR ALS PROMPTS.** 
+- `04_extraccio_tweets_cites/` — extracció de cites i tweets de les notícies.
+- `05_edatisme/` — anàlisi específic sobre edatisme.  
+- `altres/` — material addicional i proves diverses (inclou llibre d'estil, decàlegs).
 
 Aquest apartat actua com a **repositori de coneixement i proves paral·leles**, complementari al desenvolupament dels assistents.
 
