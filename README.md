@@ -92,4 +92,3 @@ Cada projecte inclòs al repositori segueix un patró bàsic de funcionament:
 
 3. **Pujar el servidor (entorn de producció)**  
    - Canvia la configuració del port i/o host al fitxer `server.py` perquè escolti en la IP pública o al port requerit (per exemple `0.0.0.0:8080`).  
-   - Revisa els paràmetres habituals de seguretat i desplegament (firewall, gestor de processos com `pm2` o `gunicorn`, etc.). 
