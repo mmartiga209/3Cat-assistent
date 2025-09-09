@@ -13,7 +13,7 @@ Els projectes són els següents:
 
   En resum, és un entorn lleuger que serveix per experimentar i validar el funcionament dels criteris de manera aïllada abans d’integrar-los en fluxos més complexos.
 
-- `assistent-lang-chain`  
+- `assistent-lang-graph`  
   Té la mateixa estructura que l’`assistent-basic`, amb un **backend** i un **frontend**, però aquí el backend és implementa LangGraph.  
 
   - **Backend**: inclou tota l’estructura de **LangGraph**, de manera que els diferents nodes i criteris funcionen conjuntament dins d’un mateix flux. Ja no es tracta de provar els criteris per separat, sinó de tenir l’**arquitectura de l’assistent final** en funcionament.  
@@ -25,7 +25,7 @@ Els projectes són els següents:
   És un projecte en desenvolupament pensat per treballar els **criteris més lingüístics** del llibre d’estil.  
 
   - A diferència dels altres projectes, aquí **no s’hi tracten els criteris generals** (pluralisme, diversitat, etc.), sinó que s’està dissenyant un **assistent separat** que es centrarà en aspectes lingüístics específics.  
-  - De moment, segueix la mateixa estructura que l’`assistent-lang-chain`, amb un **backend** (basat en LangGraph) i un **frontend** senzill en HTML que interactua amb el servidor.  
+  - De moment, segueix la mateixa estructura que l’`assistent-lang-graph`, amb un **backend** (basat en LangGraph) i un **frontend** senzill en HTML que interactua amb el servidor.  
   - Aquesta part encara està en fase inicial, però la idea és anar desenvolupant nodes i anar iterant sobre els prompts.
 
   L’objectiu és que acabi sent un mòdul complementari a l’assistent general, especialitzat en l’anàlisi lingüística.
@@ -46,7 +46,7 @@ Això permet entendre millor el rol de cada assistent dins del conjunt del siste
 - **Funcionalitat principal**: proves independents de cada criteri, sense flux integrat.  
 - **Ús previst**: validació ràpida dels nodes generals abans d’integrar-los a LangGraph.  
 
-### 🟡 assistent-lang-chain
+### 🟡 assistent-lang-graph
 - **Estructura**: backend complet amb LangGraph + frontend HTML.  
 - **Funcionalitat principal**: flux global de l’assistent amb tots els criteris integrats. Nodes específics inclosos, encara sense funcionalitat.
 - **Ús previst**: és la base de l’arquitectura final de l’assistent.  
