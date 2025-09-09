@@ -67,29 +67,58 @@ def setup():
 
 
 
+# # Exemple post
+# # Define API endpoint to process news text
+# @app.post("/analisigeneral")
+# async def process_text(request: NewsRequest):
+#     if not request.text.strip():
+#         raise HTTPException(status_code=400, detail="Falta la notícia")
+    
+#     # Ara farem els diferents anàlisis per tots els criteris
+#     results = {}
+#     results.update(estil_analysis(request.text))
+#     #results.update(frase_analysis(request.text))
+#     #results.update(comes_analysis(request.text))
+#     print(results)
+#     return results
+    
 
+#     # Aquí podríem fer un resum de tots els resultats
+#     # De moment per les proves només retornem el resultat de les prompts individuals
+    
+#     return summary
 
-
-# Exemple post
-# Define API endpoint to process news text
-@app.post("/analisigeneral")
-async def process_text(request: NewsRequest):
+@app.post("/analisi/estil")
+async def analisi_estil(request: NewsRequest):
+    """
+    Endpoint per retornar l'anàlisi d'ESTIL.
+    """
     if not request.text.strip():
         raise HTTPException(status_code=400, detail="Falta la notícia")
-    
-    # Ara farem els diferents anàlisis per tots els criteris
-    results = {}
-    results.update(estil_analysis(request.text))
-    #results.update(frase_analysis(request.text))
-    #results.update(comes_analysis(request.text))
-    print(results)
-    return results
-    
+    # Retorna exclusivament el resultat de l'anàlisi d'estil
+    return estil_analysis(request.text)
 
-    # Aquí podríem fer un resum de tots els resultats
-    # De moment per les proves només retornem el resultat de les prompts individuals
-    
-    return summary
+
+@app.post("/analisi/frase")
+async def analisi_frase(request: NewsRequest):
+    """
+    Endpoint per retornar l'anàlisi de FRASE.
+    """
+    if not request.text.strip():
+        raise HTTPException(status_code=400, detail="Falta la notícia")
+    # Retorna exclusivament el resultat de l'anàlisi de frase
+    return frase_analysis(request.text)
+
+
+@app.post("/analisi/comes")
+async def analisi_comes(request: NewsRequest):
+    """
+    Endpoint per retornar l'anàlisi de COMES.
+    """
+    if not request.text.strip():
+        raise HTTPException(status_code=400, detail="Falta la notícia")
+    # Retorna exclusivament el resultat de l'anàlisi de comes
+    return comes_analysis(request.text)
 
 
 # Run the FastAPI server

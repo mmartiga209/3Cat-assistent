@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Assistent llibre d'estil 3Cat</title>
+  <title>Assistent lingüísitc 3Cat</title>
   <style>
     :root{
       --fons:#f8f8f8;
@@ -42,7 +42,7 @@
     @media (min-width: 780px){
       .fila-entrada{ grid-template-columns: 1fr 1fr; }
     }
-    textarea, input[type="text"] {
+    textarea, input[type="text"], select {
       width: 100%;
       padding: 12px 14px;
       font-size: 16px;
@@ -118,7 +118,7 @@
     }
     .badge-si { background: var(--ok-bg); color: var(--ok); }
     .badge-no { background: var(--ko-bg); color: var(--ko); }
-    .badge-ar { background: var(--warn-bg); color: var(--warn); } /* Amb reserves */
+    .badge-ar { background: var(--warn-bg); color: var(--warn); }
     .badge-na { background: #eef2f7; color: #3c4043; }
 
     .key { font-weight: 700; text-transform: capitalize; }
@@ -159,11 +159,70 @@
       font-size: 13px; padding: 8px 10px; border-radius: 8px; border:1px solid var(--borda); background:#fff; color:#111; cursor:pointer;
     }
     .btn-copia:hover { background:#f5f5f5; }
+
+    /* [NOU: FRASE] estils específics */
+    .frase-header{
+      display:grid; gap:10px; margin-top:20px;
+    }
+    @media (min-width:760px){
+      .frase-header{ grid-template-columns: 2fr 1fr; align-items:start; }
+    }
+    .kpis{ display:flex; gap:10px; flex-wrap:wrap; }
+    .kpi{
+      padding:10px 12px; border:1px solid var(--borda); border-radius:10px; background:#fff; font-weight:700;
+    }
+    .criteri-card{
+      border:1px solid var(--borda); border-radius:12px; padding:14px; margin-top:14px; background:#fff;
+    }
+    .criteri-cap{
+      display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:8px;
+    }
+    .grid-2{
+      display:grid; gap:10px;
+    }
+    @media (min-width:760px){
+      .grid-2{ grid-template-columns: 1fr 1fr; }
+    }
+    .etiqueta{ font-size:12px; font-weight:700; text-transform:uppercase; color:#555; letter-spacing:.03em; }
+    /* [NOU: COMES] estils específics */
+    .comes-header{
+      display:grid; gap:10px; margin-top:20px;
+    }
+    @media (min-width:760px){
+      .comes-header{ grid-template-columns: 2fr 1fr; align-items:start; }
+    }
+    .legend{
+      display:flex; gap:8px; flex-wrap:wrap; margin-top:6px; font-size:13px; color:#555;
+    }
+    .legend .tag{ border:1px solid var(--borda); border-radius:8px; padding:4px 8px; background:#fff; }
+    .kpis{ display:flex; gap:10px; flex-wrap:wrap; }
+    .kpi{
+      padding:10px 12px; border:1px solid var(--borda); border-radius:10px; background:#fff; font-weight:700;
+    }
+    .criteri-card{
+      border:1px solid var(--borda); border-radius:12px; padding:14px; margin-top:14px; background:#fff;
+    }
+    .criteri-cap{
+      display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:8px;
+    }
+    .grid-2{
+      display:grid; gap:10px;
+    }
+    @media (min-width:760px){
+      .grid-2{ grid-template-columns: 1fr 1fr; }
+    }
+    .etiqueta{ font-size:12px; font-weight:700; text-transform:uppercase; color:#555; letter-spacing:.03em; }
+
+    /* ressaltat de comes als exemples */
+    mark.coma-add { background:#e6f4ea; padding:0 2px; border-radius:3px; }
+    mark.coma-del { background:#fce8e6; padding:0 2px; border-radius:3px; }
+    mark.coma-plain { background:#fff4ce; padding:0 2px; border-radius:3px; }
+
   </style>
 </head>
 <body>
   <h2>Assistent llibre d'estil 3Cat</h2>
-  <p class="desc">Ara imprimeix el format nou: <em>anàlisi global</em>, <em>avaluació per criteri</em> i <em>versió optimitzada</em>. Prem <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Enter</kbd> per processar.</p>
+  <p class="desc">Prem <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Enter</kbd> per processar.</p>
 
   <div class="fila-entrada">
     <div>
@@ -174,7 +233,15 @@
     <div>
       <label for="api">Servidor API</label>
       <input id="api" type="text" value="http://localhost:5000" />
-      <div class="ajuda">Endpoint per defecte: <code>/analisigeneral</code>. Canvia l’URL si el backend en fa servir un altre.</div>
+
+      <label for="endpointSel">Tipus d’anàlisi</label>
+      <select id="endpointSel">
+        <option value="/analisi/estil">Estil (/analisi/estil)</option>
+        <option value="/analisi/frase">Frase (/analisi/frase)</option>
+        <option value="/analisi/comes">Comes (/analisi/comes)</option>
+      </select>
+      <div class="ajuda">Selecciona quin endpoint vols cridar. Pots canviar el servidor a dalt.</div>
+
       <button id="btnProcessa" type="button">Processa la notícia</button>
       <div id="estat" class="ajuda muted" aria-live="polite">Esperant entrada…</div>
       <div id="err" class="errors"></div>
@@ -182,9 +249,7 @@
     </div>
   </div>
 
-  <div id="sortida">
-    <!-- Blocs de render es creen aquí -->
-  </div>
+  <div id="sortida"></div>
 
 <script>
   // ─────────────────────────────────────────────────────────────────────────────
@@ -260,14 +325,14 @@
     const textEntrada = $("#noticia").value.trim();
     const btn = $("#btnProcessa");
     const API_BASE = ($("#api").value || "http://localhost:5000").replace(/\/+$/,"");
-    const endpoint = "/analisigeneral"; // canvia-ho si cal
+    const endpoint = $("#endpointSel").value || "/analisi/estil";
 
     if (!textEntrada) {
       setEstat("Cal introduir text o un enllaç.");
       return;
     }
 
-    setEstat("Analitzant notícia…");
+    setEstat(`Analitzant notícia a ${endpoint}…`);
     activaCarrega(btn, true);
 
     try {
@@ -275,10 +340,11 @@
       const data = await cridaBackend(API_BASE, endpoint, cos);
       console.log("Resposta backend:", data);
 
-      // Decideix render nou o antic segons la forma de la resposta
-      renderResposta(data);
+      // [NOU: FRASE] branching per endpoint
+      renderPerEndpoint(endpoint, data);
+
       setEstat("Anàlisi completada.", "neutral");
-      mostraOk("S’ha processat la notícia correctament.");
+      mostraOk(`S’ha processat la notícia correctament (${endpoint}).`);
     } catch (error) {
       console.error(error);
       $("#sortida").innerHTML = "";
@@ -312,25 +378,65 @@
   }
 
   // ─────────────────────────────────────────────────────────────────────────────
-  // Render intel·ligent segons el format
+  // Render per endpoint
   // ─────────────────────────────────────────────────────────────────────────────
-  function renderResposta(res){
-    const sortida = $("#sortida");
-    sortida.innerHTML = "";
+function renderPerEndpoint(endpoint, res){
+  const sortida = $("#sortida");
+  sortida.innerHTML = "";
 
+  if (endpoint === "/analisi/estil"){
     if (esRespostaNova(res)) {
       sortida.appendChild(blocAnalisiGlobal(res.analisi_global));
       sortida.appendChild(blocAvaluacioPerCriteri(res.avaluacio_per_criteri));
       sortida.appendChild(blocVersioOptimitzada(res.versio_optimitzada));
-    } else {
-      // compatibilitat amb el format antic (diccionari de criteris -> { compliment, comentari })
+    } else if (esDiccionariAntic(res)) {
       const bloc = document.createElement("div");
       bloc.className = "resposta";
       bloc.innerHTML = `<h3>📊 Resultats (format antic)</h3>${construeixTaulaAntiga(res) || "<p>Sense resultats.</p>"}`;
       sortida.appendChild(bloc);
+    } else {
+      sortida.appendChild(blocJSON(res));
     }
+    return;
   }
 
+  if (endpoint === "/analisi/frase"){
+    if (esRespostaNova(res)) {
+      sortida.appendChild(renderRespostaFrase(res));
+    } else {
+      sortida.appendChild(blocJSON(res));
+    }
+    return;
+  }
+
+  if (endpoint === "/analisi/comes"){ // [NOU: COMES]
+    if (esRespostaNova(res)) {
+      sortida.appendChild(renderRespostaComes(res));
+    } else if (esDiccionariAntic(res)) {
+      const bloc = document.createElement("div");
+      bloc.className = "resposta";
+      bloc.innerHTML = `<h3>📊 Resultats (format antic)</h3>${construeixTaulaAntiga(res) || "<p>Sense resultats.</p>"}`;
+      sortida.appendChild(bloc);
+    } else {
+      sortida.appendChild(blocJSON(res));
+    }
+    return;
+  }
+
+  // Per a qualsevol altre: compatibilitat bàsica + JSON
+  if (esDiccionariAntic(res)) {
+    const bloc = document.createElement("div");
+    bloc.className = "resposta";
+    bloc.innerHTML = `<h3>📊 Resultats (format antic)</h3>${construeixTaulaAntiga(res) || "<p>Sense resultats.</p>"}`;
+    sortida.appendChild(bloc);
+  } else {
+    sortida.appendChild(blocJSON(res));
+  }
+}
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // Render genèric existent
+  // ─────────────────────────────────────────────────────────────────────────────
   function esRespostaNova(obj){
     if (!obj || typeof obj !== "object") return false;
     const teAnalisi = typeof obj.analisi_global === "string";
@@ -339,9 +445,13 @@
     return teAnalisi && teAvaluacio && teVersio;
   }
 
-  // ─────────────────────────────────────────────────────────────────────────────
-  // Render NOU (analisi_global, avaluacio_per_criteri, versio_optimitzada)
-  // ─────────────────────────────────────────────────────────────────────────────
+  function esDiccionariAntic(obj){
+    if (!obj || typeof obj !== "object" || Array.isArray(obj)) return false;
+    const vals = Object.values(obj);
+    if (vals.length === 0) return false;
+    return vals.every(v => v && typeof v === "object" && ("compliment" in v || "comentari" in v));
+  }
+
   function blocAnalisiGlobal(text){
     const d = document.createElement("div");
     d.className = "bloc";
@@ -362,7 +472,6 @@
       return d;
     }
 
-    // Construeix taula
     const files = items.map((it) => {
       const criteri = escapaHtml(it?.criteri ?? "—");
       const complimentRaw = String(it?.compliment ?? "").trim();
@@ -373,7 +482,6 @@
         "amb reserves":"badge-ar",
       })[complimentNorm] || "badge-na";
 
-      // Exemples: pot ser array de 2 cadenes ["Frase original", "Frase millorada"]
       const exemples = Array.isArray(it?.exemples) ? it.exemples : [];
       const exOriginal = escapaHtml(exemples?.[0] || "");
       const exMillorat = escapaHtml(exemples?.[1] || "");
@@ -427,7 +535,6 @@
       <pre class="code" id="versioOpt">${escapaHtml(contingut)}</pre>
     `;
 
-    // botó copiar
     setTimeout(()=>{
       const btn = d.querySelector("#btnCopyOpt");
       btn?.addEventListener("click", async ()=>{
@@ -445,61 +552,333 @@
     return d;
   }
 
+  function blocJSON(obj){
+    const d = document.createElement("div");
+    d.className = "bloc";
+    d.innerHTML = `
+      <h3>📦 Resposta</h3>
+      <pre class="code">${escapaHtml(JSON.stringify(obj, null, 2))}</pre>
+    `;
+    return d;
+  }
+
   // ─────────────────────────────────────────────────────────────────────────────
-  // Render ANTIC per compatibilitat
+  // [NOU: FRASE] Render específic per /analisi/frase
   // ─────────────────────────────────────────────────────────────────────────────
-  function construeixTaulaAntiga(resultats) {
-    if (!resultats || typeof resultats !== "object" || Object.keys(resultats).length === 0) {
-      return "";
+  function renderRespostaFrase(res){
+    const wrap = document.createElement("div");
+
+    // capçalera amb anàlisi global + KPIs
+    const kpis = calculaKPIsFrase(res?.avaluacio_per_criteri || []);
+    const cap = document.createElement("div");
+    cap.className = "bloc frase-header";
+    cap.innerHTML = `
+      <div>
+        <h3>🧭 Anàlisi global (frase)</h3>
+        <p>${escapaHtml(res?.analisi_global || "—")}</p>
+      </div>
+      <div>
+        <div class="kpis" aria-label="Indicadors">
+          <div class="kpi">✅ Correctes: ${kpis.ok}</div>
+          <div class="kpi">⚠️ Amb reserves: ${kpis.ar}</div>
+          <div class="kpi">⛔ No compleix: ${kpis.no}</div>
+        </div>
+      </div>
+    `;
+    wrap.appendChild(cap);
+
+    // targetes per criteri
+    const llista = Array.isArray(res?.avaluacio_per_criteri) ? res.avaluacio_per_criteri : [];
+    if (llista.length === 0){
+      const buida = document.createElement("div");
+      buida.className = "bloc";
+      buida.innerHTML = `<p class="muted">Sense elements d’avaluació.</p>`;
+      wrap.appendChild(buida);
+    } else {
+      llista.forEach((it) => wrap.appendChild(cardCriteriFrase(it)));
     }
-    const entries = Object.entries(resultats);
-    entries.sort((a, b) => {
-      const ia = ORDER_ANTIC.indexOf(a[0]);
-      const ib = ORDER_ANTIC.indexOf(b[0]);
-      return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+
+    // versió optimitzada (final)
+    wrap.appendChild(blocVersioOptimitzada(res?.versio_optimitzada || ""));
+
+    return wrap;
+  }
+
+  function calculaKPIsFrase(items){
+    let ok=0, ar=0, no=0;
+    for (const it of items){
+      const v = normalitza(String(it?.compliment || ""));
+      if (v === "si" || v === "sí") ok++;
+      else if (v === "amb reserves") ar++;
+      else if (v === "no") no++;
+    }
+    return { ok, ar, no };
+  }
+
+  function cardCriteriFrase(it){
+    const d = document.createElement("div");
+    d.className = "criteri-card";
+
+    const nom = String(it?.criteri || "—");
+    const complimentRaw = String(it?.compliment || "").trim();
+    const complimentNorm = normalitza(complimentRaw);
+    const badgeClass = ({
+      "si":"badge-si", "sí":"badge-si",
+      "no":"badge-no",
+      "amb reserves":"badge-ar",
+    })[complimentNorm] || "badge-na";
+
+    const exemples = Array.isArray(it?.exemples) ? it.exemples : [];
+    const exOriginal = String(exemples?.[0] || "");
+    const exMillorat = String(exemples?.[1] || "");
+    const justificacio = String(it?.justificacio || "");
+
+    d.innerHTML = `
+      <div class="criteri-cap">
+        <div><strong>${escapaHtml(nom)}</strong></div>
+        <div><span class="badge ${badgeClass}">${escapaHtml(complimentRaw || "—")}</span></div>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <div class="etiqueta">Original</div>
+          <pre class="code">${escapaHtml(exOriginal || "—")}</pre>
+        </div>
+        <div>
+          <div class="etiqueta">Proposta</div>
+          <div class="capsa-cap" style="margin:0 0 6px 0;">
+            <div></div>
+            <button class="btn-copia" type="button">Copia</button>
+          </div>
+          <pre class="code">${escapaHtml(exMillorat || "—")}</pre>
+        </div>
+      </div>
+
+      <div style="margin-top:10px;">
+        <div class="etiqueta">Justificació</div>
+        <p>${escapaHtml(justificacio || "—")}</p>
+      </div>
+    `;
+
+    // Acció copiar
+    const btn = d.querySelector(".btn-copia");
+    const pre = d.querySelectorAll("pre.code")[1];
+    btn?.addEventListener("click", async ()=>{
+      try{
+        await navigator.clipboard.writeText(exMillorat || "");
+        btn.textContent = "Copiat!";
+        setTimeout(()=>btn.textContent = "Copia", 1200);
+      }catch{
+        btn.textContent = "No s’ha pogut copiar";
+        setTimeout(()=>btn.textContent = "Copia", 1500);
+      }
     });
 
-    let files = "";
-    for (const [criteri, valor] of entries) {
-      const complimentRaw = (valor?.compliment ?? "");
-      const compliment = normalitza(complimentRaw);
-      const comentari = valor?.comentari || "";
+    return d;
+  }
 
-      const badgeClasses = {
-        "si": "badge-si",
-        "sí": "badge-si",
-        "no": "badge-no",
-        "no aplica": "badge-na",
-        "n/a": "badge-na",
-        "na": "badge-na"
-      };
-      const classeBadge = badgeClasses[compliment] || "badge-na";
-      const textBadge = complimentRaw || "—";
+  // [NOU: COMES] Render principal
+function renderRespostaComes(res){
+  const wrap = document.createElement("div");
 
-      files += `
-        <tr>
-          <td class="key">${escapaHtml(criteri)}</td>
-          <td><span class="badge ${classeBadge}">${escapaHtml(textBadge)}</span></td>
-          <td>${escapaHtml(comentari)}</td>
-        </tr>
-      `;
+  // capçalera amb anàlisi global + KPIs + llegenda
+  const kpis = calculaKPIsCompliment(res?.avaluacio_per_criteri || []);
+  const perCrit = comptaPerCriteri(res?.avaluacio_per_criteri || []);
+  const cap = document.createElement("div");
+  cap.className = "bloc comes-header";
+  cap.innerHTML = `
+    <div>
+      <h3>🧭 Anàlisi global (comes)</h3>
+      <p>${escapaHtml(res?.analisi_global || "—")}</p>
+      <div class="legend" aria-label="Llegenda criteris">
+        <span class="tag">Coma obligatòria/incorrecta: ${perCrit.obligatoria_incorrecta}</span>
+        <span class="tag">Enumeracions: ${perCrit.enumeracions}</span>
+        <span class="tag">Conjuncions: ${perCrit.conjuncions}</span>
+        <span class="tag">Incisos/desplaçats: ${perCrit.incisos}</span>
+        <span class="tag">Adversatives: ${perCrit.adversatives}</span>
+      </div>
+    </div>
+    <div>
+      <div class="kpis" aria-label="Indicadors">
+        <div class="kpi">✅ Correctes: ${kpis.ok}</div>
+        <div class="kpi">⚠️ Amb reserves: ${kpis.ar}</div>
+        <div class="kpi">⛔ No compleix: ${kpis.no}</div>
+      </div>
+    </div>
+  `;
+  wrap.appendChild(cap);
+
+  // targetes per criteri
+  const llista = Array.isArray(res?.avaluacio_per_criteri) ? res.avaluacio_per_criteri : [];
+  if (llista.length === 0){
+    const buida = document.createElement("div");
+    buida.className = "bloc";
+    buida.innerHTML = `<p class="muted">Sense elements d’avaluació.</p>`;
+    wrap.appendChild(buida);
+  } else {
+    llista.forEach((it) => wrap.appendChild(cardCriteriComes(it)));
+  }
+
+  // versió optimitzada (final)
+  wrap.appendChild(blocVersioOptimitzada(res?.versio_optimitzada || ""));
+
+  return wrap;
+}
+
+function cardCriteriComes(it){
+  const d = document.createElement("div");
+  d.className = "criteri-card";
+
+  const nom = String(it?.criteri || "—");
+  const complimentRaw = String(it?.compliment || "").trim();
+  const complimentNorm = normalitza(complimentRaw);
+  const badgeClass = ({
+    "si":"badge-si", "sí":"badge-si",
+    "no":"badge-no",
+    "amb reserves":"badge-ar",
+  })[complimentNorm] || "badge-na";
+
+  const exemples = Array.isArray(it?.exemples) ? it.exemples : [];
+  const exOriginal = String(exemples?.[0] || "");
+  const exMillorat = String(exemples?.[1] || "");
+  const justificacio = String(it?.justificacio || "");
+
+  // ressaltat de comes amb heurística d’afegits/eliminats
+  const { oOut, pOut } = ressaltaCanvisComes(exOriginal, exMillorat);
+
+  d.innerHTML = `
+    <div class="criteri-cap">
+      <div><strong>${escapaHtml(nom)}</strong></div>
+      <div><span class="badge ${badgeClass}">${escapaHtml(complimentRaw || "—")}</span></div>
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <div class="etiqueta">Original</div>
+        <pre class="code">${oOut || escapaHtml(exOriginal || "—")}</pre>
+      </div>
+      <div>
+        <div class="etiqueta">Proposta</div>
+        <div class="capsa-cap" style="margin:0 0 6px 0;">
+          <div></div>
+          <button class="btn-copia" type="button">Copia</button>
+        </div>
+        <pre class="code">${pOut || escapaHtml(exMillorat || "—")}</pre>
+      </div>
+    </div>
+
+    <div style="margin-top:10px;">
+      <div class="etiqueta">Justificació</div>
+      <p>${escapaHtml(justificacio || "—")}</p>
+    </div>
+  `;
+
+  // Acció copiar (copia la proposta sense marques)
+  const btn = d.querySelector(".btn-copia");
+  btn?.addEventListener("click", async ()=>{
+    try{
+      await navigator.clipboard.writeText(exMillorat || "");
+      btn.textContent = "Copiat!";
+      setTimeout(()=>btn.textContent = "Copia", 1200);
+    }catch{
+      btn.textContent = "No s’ha pogut copiar";
+      setTimeout(()=>btn.textContent = "Copia", 1500);
+    }
+  });
+
+  return d;
+}
+
+  // ─────────────────────────────────────────────────────────────────────────────
+
+  // Render auxiliar en brut
+  function blocJSON(obj){
+    const d = document.createElement("div");
+    d.className = "bloc";
+    d.innerHTML = `
+      <h3>📦 Resposta</h3>
+      <pre class="code">${escapaHtml(JSON.stringify(obj, null, 2))}</pre>
+    `;
+    return d;
+  }
+  // [NOU: COMES] — utilitats per comptar i ressaltar
+  function calculaKPIsCompliment(items){
+    let ok=0, ar=0, no=0;
+    for (const it of (items||[])){
+      const v = normalitza(String(it?.compliment || ""));
+      if (v === "si" || v === "sí") ok++;
+      else if (v === "amb reserves") ar++;
+      else if (v === "no") no++;
+    }
+    return { ok, ar, no };
+  }
+
+  function mapCriteriId(nom){
+    const n = normalitza(String(nom||""));
+    if (n.includes("obligatoria") || n.includes("incorrecta")) return "obligatoria_incorrecta";
+    if (n.includes("enumeracions")) return "enumeracions";
+    if (n.includes("conjuncions")) return "conjuncions";
+    if (n.includes("incisos") || n.includes("desplacats") || n.includes("desplaçats")) return "incisos";
+    if (n.includes("adversatives")) return "adversatives";
+    return "altres";
+  }
+
+  function comptaPerCriteri(items){
+    const comptador = { obligatoria_incorrecta:0, enumeracions:0, conjuncions:0, incisos:0, adversatives:0, altres:0 };
+    for (const it of (items||[])){
+      comptador[ mapCriteriId(it?.criteri) ]++;
+    }
+    return comptador;
+  }
+
+  // Ressalta comes: marca totes les comes; si vols, pots fer heurístiques addicionals
+  function ressaltaComesBase(text){
+    return String(text||"").replace(/,/g, m => `<mark class="coma-plain">,</mark>`);
+  }
+
+  // Opcionalment, si vols mostrar "afegit" vs "eliminat" entre original i proposta,
+  // pots fer una heurística simple: comes que només són a la proposta => coma-add;
+  // comes que només són a l’original => coma-del.
+  function ressaltaCanvisComes(original, proposta){
+    const o = String(original||"");
+    const p = String(proposta||"");
+    const oPos = [...o].map((ch,i)=> ch===',' ? i : -1).filter(i=>i>=0);
+    const pPos = [...p].map((ch,i)=> ch===',' ? i : -1).filter(i=>i>=0);
+
+    // Conjunt de posicions “semblants” (tolerem desplaçaments petits)
+    const matchTol = 2;
+    const pMatched = new Set();
+    const oMatched = new Set();
+
+    for (let oi of oPos){
+      for (let pi of pPos){
+        if (Math.abs(oi - pi) <= matchTol && !pMatched.has(pi)){
+          oMatched.add(oi); pMatched.add(pi); break;
+        }
+      }
     }
 
-    return `
-      <table role="table" aria-label="Resultats d'avaluació (antic)">
-        <thead>
-          <tr>
-            <th scope="col">Criteri</th>
-            <th scope="col">Compliment</th>
-            <th scope="col">Comentari</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${files}
-        </tbody>
-      </table>
-    `;
+    // Marca a l’original: comes eliminades (no match) en vermell suau
+    let oOut = "";
+    for (let i=0;i<o.length;i++){
+      const ch = o[i];
+      if (ch === ',' && !oMatched.has(i)) oOut += `<mark class="coma-del">,</mark>`;
+      else if (ch === ',') oOut += `<mark class="coma-plain">,</mark>`;
+      else oOut += escapaHtml(ch);
+    }
+
+    // Marca a la proposta: comes afegides (no match) en verd suau
+    let pOut = "";
+    for (let i=0;i<p.length;i++){
+      const ch = p[i];
+      if (ch === ',' && !pMatched.has(i)) pOut += `<mark class="coma-add">,</mark>`;
+      else if (ch === ',') pOut += `<mark class="coma-plain">,</mark>`;
+      else pOut += escapaHtml(ch);
+    }
+
+    return { oOut, pOut };
   }
+
 </script>
 </body>
 </html>

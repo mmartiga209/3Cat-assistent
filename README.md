@@ -84,11 +84,11 @@ Cada projecte inclòs al repositori segueix un patró bàsic de funcionament:
      ```bash
      python server.py
      ```
-   - Per defecte, el servidor s’aixeca en un port local (normalment `http://localhost:8000/`).  
+   - Per defecte, el servidor s’aixeca en un port local (normalment `http://localhost:5000/`).  
 
 2. **Frontend**  
    - Un cop el servidor està actiu, obre el fitxer `index.html` (o equivalent) situat al directori de *frontend*.  
    - El navegador es connectarà al servidor i l’aplicació es podrà utilitzar amb normalitat.  
 
 3. **Pujar el servidor (entorn de producció)**  
-   - Canvia la configuració del port i/o host al fitxer `server.py` perquè escolti en la IP pública o al port requerit (per exemple `0.0.0.0:8080`).  
+   - Canvia la configuració del port i/o host al fitxer `server.py` perquè escolti en la IP pública o al port requerit (per exemple `0.0.0.0:5000`).  
